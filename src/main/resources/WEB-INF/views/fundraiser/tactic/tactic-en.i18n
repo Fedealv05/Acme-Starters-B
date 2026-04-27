@@ -1,0 +1,26 @@
+#Tactic Form (Fundraiser) ############################################
+
+fundraiser.tactic.form.label.name = Name
+fundraiser.tactic.form.label.kind = Kind
+fundraiser.tactic.form.label.notes = Notes
+fundraiser.tactic.form.label.expectedPercentage = Expected Percentage
+
+fundraiser.tactic.form.title = Tactic Details
+fundraiser.tactic.form.button.create = Create
+fundraiser.tactic.form.button.update = Update
+fundraiser.tactic.form.button.delete = Delete
+fundraiser.tactic.form.button.return = Return	
+
+#Tactic List (Fundraiser) ############################################
+
+fundraiser.tactic.list.label.name = Name
+fundraiser.tactic.list.label.kind = Kind
+fundraiser.tactic.list.label.expectedPercentage = Expected Percentage
+
+fundraiser.tactic.list.title = Tactics
+fundraiser.tactic.list.button.create = Create tactic
+fundraiser.tactic.list.button.return = Return to strategy
+
+# Validations ############################################
+acme.validation.header.message = This field must not be blank and must be up to 75 characters long.
+acme.validation.text.message = This field must not be blank and must be up to 255 characters long.

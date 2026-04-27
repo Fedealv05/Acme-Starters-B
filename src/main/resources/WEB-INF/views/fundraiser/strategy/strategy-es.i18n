@@ -1,0 +1,40 @@
+#Strategy Form #######################################################
+
+fundraiser.strategy.form.label.ticker = Código
+fundraiser.strategy.form.label.name = Nombre
+fundraiser.strategy.form.label.description = Descripción
+fundraiser.strategy.form.label.startMoment = Momento de inicio
+fundraiser.strategy.form.label.endMoment = Momento de fin
+fundraiser.strategy.form.label.moreInfo = Más Información
+fundraiser.strategy.form.label.monthsActive = Meses activos
+fundraiser.strategy.form.label.expectedPercentage = Porcentaje esperado
+
+fundraiser.strategy.form.label.tactics = Ver tácticas
+
+fundraiser.strategy.form.title = Estrategia
+
+fundraiser.strategy.form.button.tactics = Tácticas
+fundraiser.strategy.form.button.update = Actualizar
+fundraiser.strategy.form.button.delete = Borrar
+fundraiser.strategy.form.button.publish = Publicar
+
+#Strategy List #######################################################
+
+fundraiser.strategy.list.label.ticker = Código
+fundraiser.strategy.list.label.name = Nombre
+fundraiser.strategy.list.label.startMoment = Momento de inicio
+fundraiser.strategy.list.label.endMoment = Momento de fin
+fundraiser.strategy.list.button.create = Crear
+
+
+fundraiser.strategy.list.title = Mis Estrategias
+fundraiser.strategy.form.title = Detalles de la Estrategia
+fundraiser.strategy.form.button.create = Crear
+
+
+#Strategy Validations #######################################################
+
+fundraiser.strategy.publish.validation.validStartMoment = La fecha de inicio debe ser posterior a la fecha actual
+fundraiser.strategy.publish.validation.validEndMoment = La fecha final debe ser posterior a la fecha actual
+
+fundraiser.strategy.form.error.duplicated-ticker = Ya existe una estrategia con este ticker

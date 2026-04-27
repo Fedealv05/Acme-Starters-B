@@ -1,0 +1,41 @@
+# Sponsorship - List
+sponsor.sponsorship.list.label.ticker = Ticker
+sponsor.sponsorship.list.label.name = Name
+sponsor.sponsorship.list.label.startMoment = Start moment
+sponsor.sponsorship.list.label.endMoment = End moment
+sponsor.sponsorship.list.label.draftMode = Draft mode?
+sponsor.sponsorship.list.button.create = Create sponsorship
+
+# Sponsorship - Form (Labels)
+sponsor.sponsorship.form.label.ticker = Ticker
+sponsor.sponsorship.form.label.name = Name
+sponsor.sponsorship.form.label.description = Description
+sponsor.sponsorship.form.label.moreInfo = More info (URL)
+sponsor.sponsorship.form.label.startMoment = Start moment
+sponsor.sponsorship.form.label.endMoment = End moment
+sponsor.sponsorship.form.label.totalMoney = Total money
+sponsor.sponsorship.form.label.monthsActive = Months active
+
+# Sponsorship - Form (Buttons)
+sponsor.sponsorship.form.button.donations = View donations
+sponsor.sponsorship.form.button.update = Update
+sponsor.sponsorship.form.button.delete = Delete
+sponsor.sponsorship.form.button.publish = Publish
+sponsor.sponsorship.form.button.create = Create
+
+sponsor.sponsorship.list.title = Sponsorships
+sponsor.sponsorship.form.title = Sponsorship details
+
+sponsor.donation.list.title = Donations
+sponsor.donation.form.title = Donation details
+sponsor.donation.form.button.create = Create donation
+
+sponsor.donation.form.label.kind = Kind
+any.donation.list.label.kind = Kind
+
+sponsor.donation.list.button.create = Create donation
+sponsor.donation.form.button.update = Update donation
+sponsor.donation.form.button.delete = Delete donation
+
+acme.validation.header.message = Invalid string
+acme.validation.text.message = Invalid text
