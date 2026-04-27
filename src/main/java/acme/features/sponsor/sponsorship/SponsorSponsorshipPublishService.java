@@ -78,7 +78,7 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo");
+		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "totalMoney", "monthsActive");
 		super.unbindGlobal("sponsorId", this.sponsorship.getSponsor().getId());
 		super.unbindGlobal("draftMode", this.sponsorship.getDraftMode());
 	}

@@ -11,10 +11,10 @@
     <acme:form-moment code="sponsor.sponsorship.form.label.startMoment" path="startMoment"/>
     <acme:form-moment code="sponsor.sponsorship.form.label.endMoment" path="endMoment" />
 
-    <jstl:if test="${_command == 'show'}">
+    
         <acme:form-money code="sponsor.sponsorship.form.label.totalMoney" path="totalMoney" readonly = "true"/>
         <acme:form-textbox code="sponsor.sponsorship.form.label.monthsActive" path="monthsActive" readonly = "true"/>
-    </jstl:if>
+    
 
     <jstl:choose>
         <jstl:when test="${_command == 'show' && draftMode == false}">
