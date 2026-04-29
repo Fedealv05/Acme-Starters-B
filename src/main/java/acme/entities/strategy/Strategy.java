@@ -24,6 +24,7 @@ import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.constraints.strategy.ValidStrategy;
+import acme.entities.projects.Project;
 import acme.realms.Fundraiser;
 import lombok.Getter;
 import lombok.Setter;
@@ -79,6 +80,10 @@ public class Strategy extends AbstractEntity {
 
 	@OneToMany(mappedBy = "strategy")
 	private Collection<Tactic>	tactics;
+
+	@Valid
+	@ManyToOne(optional = true)
+	private Project				project;
 
 
 	@Transient

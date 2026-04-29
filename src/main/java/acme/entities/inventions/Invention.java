@@ -25,6 +25,7 @@ import acme.constraints.ValidMoneyWithCurrency;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.constraints.inventions.ValidInvention;
+import acme.entities.projects.Project;
 import acme.realms.Inventor;
 import lombok.Getter;
 import lombok.Setter;
@@ -80,6 +81,10 @@ public class Invention extends AbstractEntity {
 	@Valid
 	@ManyToOne(optional = false)
 	private Inventor			inventor;
+
+	@Valid
+	@ManyToOne(optional = true)
+	private Project				project;
 
 
 	@Mandatory
