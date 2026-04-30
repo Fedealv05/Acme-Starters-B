@@ -17,6 +17,10 @@ user-account-sponsor-03,true,"UserIdentity{name: 'Antonio Mario', surname: 'Herr
 user-account-inventor01,true,"UserIdentity{name: 'Josevi', surname: 'sanchez', email: 'josevi@acme.com'}",inventor1,inventor1
 user-account-inventor02,true,"UserIdentity{name: 'Marta', surname: 'אבטיח Æløzå', email: 'Marta@acme.com'}",inventor2,inventor2
 user-account-inventor03,true,"UserIdentity{name: 'Myke', surname: 'mårcelo', email: 'myke@acme.com'}",inventor3,inventor3
+"user-account-manager-01","true","UserIdentity{name: 'Fede', surname: 'Manager Uno', email: 'fede1@acme.com'}","manager1","manager1"
+"user-account-manager-02","true","UserIdentity{name: 'Admin', surname: 'Manager Dos', email: 'admin@acme.com'}","manager2","manager2"
+"user-account-manager-03","true","UserIdentity{name: 'Gefe', surname: 'Manager Tres', email: 'gefe@acme.com'}","manager3","manager3"
+"user-account-manager-04","true","UserIdentity{name: 'Boss', surname: 'Manager Cuatro', email: 'boss@acme.com'}","manager4","manager4"
 user-account-auditor-01,true,"UserIdentity{name: 'Auditor1', surname: '1', email: 'auditor1@acme.com'}",auditor1,auditor1
 user-account-auditor-02,true,"UserIdentity{name: 'Auditor2', surname: '2', email: 'auditor2@acme.com'}",auditor2,auditor2
 user-account-auditor-03,true,"UserIdentity{name: 'Auditor3', surname: '3', email: 'auditor3@acme.com'}",auditor3,auditor3
