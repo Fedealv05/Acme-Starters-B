@@ -8,6 +8,7 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
@@ -28,6 +29,7 @@ import acme.entities.inventions.Invention;
 import acme.entities.inventions.InventionRepository;
 import acme.entities.strategy.Strategy;
 import acme.entities.strategy.StrategyRepository;
+import acme.realms.Manager;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -81,10 +83,10 @@ public class Project extends AbstractEntity {
 	@Column
 	private Boolean				draftMode;
 
-	//@Mandatory
-	//@Valid
-	//@ManyToOne(optional = false)
-	//private Manager manager;
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
+	private Manager				manager;
 
 
 	@Mandatory
