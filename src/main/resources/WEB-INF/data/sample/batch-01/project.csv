@@ -1,23 +1,23 @@
-key,title,keyWords,description,kickOff,closeOut,draftMode
-project-001,Proyecto Alpha,"tech, innovation, future",Un proyecto normal para probar la funcionalidad básica.,2027/05/10 10:00,2028/05/10 10:00,true
-project-002,Proyecto Beta,"science, lab, biology",Otro proyecto normal con distintos datos.,2027/06/15 12:30,2029/01/20 09:00,true
-project-003,P,K,D,2027/01/01 10:00,2027/12/31 10:00,true
-project-004,Pr,Ke,De,2027/01/01 10:00,2027/12/31 10:00,true
-project-005,This is exactly a seventy four character string used for max length testin,"k, w",Description for max length title minus one.,2027/01/01 10:00,2027/12/31 10:00,true
-project-006,This is exactly a seventy five character string used for max length testing,"k, w",Description for max length title.,2027/01/01 10:00,2027/12/31 10:00,true
-project-007,P-r_ó#j*e~c+t Oñe!,"k, w",Title with strange characters and symbols.,2027/01/01 10:00,2027/12/31 10:00,true
-project-008,Title boundary check keywords,K,Keywords minimum length testing.,2027/01/01 10:00,2027/12/31 10:00,true
-project-009,Title boundary check keywords,KW,Keywords minimum length testing plus one.,2027/01/01 10:00,2027/12/31 10:00,true
-project-010,Title boundary check keywords,This is exactly a seventy four character string used for max length testin,Keywords max length minus one.,2027/01/01 10:00,2027/12/31 10:00,true
-project-011,Title boundary check keywords,This is exactly a seventy five character string used for max length testing,Keywords exact max length.,2027/01/01 10:00,2027/12/31 10:00,true
-project-012,Title strange keywords,"c++! , #c#, @test, ñú, 日本語",Keywords with strange chars.,2027/01/01 10:00,2027/12/31 10:00,true
-project-013,Title boundary description,"k, w",D,2027/01/01 10:00,2027/12/31 10:00,true
-project-014,Title boundary description,"k, w",De,2027/01/01 10:00,2027/12/31 10:00,true
-project-015,Title boundary description,"k, w",This string is exactly two hundred and fifty four characters long to test the boundary of the description field. We use this to make sure that the validation does not break when we are extremely close to the absolute maximum limit of the database text.,2027/01/01 10:00,2027/12/31 10:00,true
-project-016,Title boundary description,"k, w",This string is exactly two hundred and fifty five characters long to test the boundary of the description field. We use this to make sure that the validation does not break when we are precisely at the absolute maximum limit of the database text length.,2027/01/01 10:00,2027/12/31 10:00,true
-project-017,Title strange description,"k, w","Descripción con comas, ""comillas dobles"", saltos de línea simulados y símbolos raros: @#¢∞¬÷<>",2027/01/01 10:00,2027/12/31 10:00,true
-project-018,Title dates minimum interval,"k, w",Dates with only one minute of difference.,2027/01/01 10:00,2027/01/01 10:01,true
-project-019,Title dates absolute minimum,"k, w",Testing lower bound of dates (Just after 2025/01/01).,2025/01/01 00:01,2027/01/01 10:00,true
-project-020,Title dates absolute maximum,"k, w",Testing upper bound of dates (Just before 2200/12/31).,2027/01/01 10:00,2200/12/31 23:58,true
-project-021,Proyecto Publicado Uno,"published, ready",Este proyecto está publicado. NECESITA UNA INVENCIÓN ASOCIADA EN LA BD.,2027/01/01 10:00,2027/12/31 10:00,false
-project-022,Proyecto Publicado Dos,"published, real",Este proyecto también está publicado. NECESITA OTRA INVENCIÓN ASOCIADA EN LA BD.,2027/01/01 10:00,2027/12/31 10:00,false
+"key","title","keyWords","description","kickOff","closeOut","draftMode","key:manager"
+"project-001","Proyecto Alpha","tech, innovation, future","Un proyecto normal para probar la funcionalidad básica.","2027/05/10 10:00","2028/05/10 10:00","true","manager1"
+"project-002","Proyecto Beta","science, lab, biology","Otro proyecto normal con distintos datos.","2027/06/15 12:30","2029/01/20 09:00","true","manager2"
+"project-003","P","K","D","2027/01/01 10:00","2027/12/31 10:00","true","manager3"
+"project-004","Pr","Ke","De","2027/01/01 10:00","2027/12/31 10:00","true","manager4"
+"project-005","This is exactly a seventy four character string used for max length testin","k, w","Description for max length title minus one.","2027/01/01 10:00","2027/12/31 10:00","true","manager1"
+"project-006","This is exactly a seventy five character string used for max length testing","k, w","Description for max length title.","2027/01/01 10:00","2027/12/31 10:00","true","manager2"
+"project-007","P-r_ó#j*e~c+t Oñe!","k, w","Title with strange characters and symbols.","2027/01/01 10:00","2027/12/31 10:00","true","manager3"
+"project-008","Title boundary check keywords","K","Keywords minimum length testing.","2027/01/01 10:00","2027/12/31 10:00","true","manager4"
+"project-009","Title boundary check keywords","KW","Keywords minimum length testing plus one.","2027/01/01 10:00","2027/12/31 10:00","true","manager1"
+"project-010","Title boundary check keywords","This is exactly a seventy four character string used for max length testin","Keywords max length minus one.","2027/01/01 10:00","2027/12/31 10:00","true","manager2"
+"project-011","Title boundary check keywords","This is exactly a seventy five character string used for max length testing","Keywords exact max length.","2027/01/01 10:00","2027/12/31 10:00","true","manager3"
+"project-012","Title strange keywords","c++! , #c#, @test, ñú, 日本語","Keywords with strange chars.","2027/01/01 10:00","2027/12/31 10:00","true","manager4"
+"project-013","Title boundary description","k, w","D","2027/01/01 10:00","2027/12/31 10:00","true","manager1"
+"project-014","Title boundary description","k, w","De","2027/01/01 10:00","2027/12/31 10:00","true","manager2"
+"project-015","Title boundary description","k, w","This string is exactly two hundred and fifty four characters long to test the boundary of the description field. We use this to make sure that the validation does not break when we are extremely close to the absolute maximum limit of the database text.","2027/01/01 10:00","2027/12/31 10:00","true","manager3"
+"project-016","Title boundary description","k, w","This string is exactly two hundred and fifty five characters long to test the boundary of the description field. We use this to make sure that the validation does not break when we are precisely at the absolute maximum limit of the database text length.","2027/01/01 10:00","2027/12/31 10:00","true","manager4"
+"project-017","Title strange description","k, w","Descripción con comas, ""comillas dobles"", saltos de línea simulados y símbolos raros: @#¢∞¬÷<>","2027/01/01 10:00","2027/12/31 10:00","true","manager1"
+"project-018","Title dates minimum interval","k, w","Dates with only one minute of difference.","2027/01/01 10:00","2027/01/01 10:01","true","manager2"
+"project-019","Title dates absolute minimum","k, w","Testing lower bound of dates (Just after 2025/01/01).","2025/01/01 00:01","2027/01/01 10:00","true","manager3"
+"project-020","Title dates absolute maximum","k, w","Testing upper bound of dates (Just before 2200/12/31).","2027/01/01 10:00","2200/12/31 23:58","true","manager4"
+"project-021","Proyecto Publicado Uno","published, ready","Este proyecto está publicado. NECESITA UNA INVENCIÓN ASOCIADA EN LA BD.","2027/01/01 10:00","2027/12/31 10:00","false","manager1"
+"project-022","Proyecto Publicado Dos","published, real","Este proyecto también está publicado. NECESITA OTRA INVENCIÓN ASOCIADA EN LA BD.","2027/01/01 10:00","2027/12/31 10:00","false","manager2"
