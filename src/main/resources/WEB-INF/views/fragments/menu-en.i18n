@@ -80,3 +80,9 @@ master.menu.authsponsorship = Sponsorship
 master.menu.authsponsorship.list = My sponsorships
 
 
+# master.menu.manager ####################################################
+
+master.menu.manager= Manager
+master.menu.manager.project.list= My projects
+
+

@@ -80,3 +80,8 @@ master.menu.sponsorship.list = Patrocinios
 master.menu.authsponsorship = Patrocinio
 master.menu.authsponsorship.list = Mis patrocinios
 
+# master.menu.manager ####################################################
+
+master.menu.manager= Manager
+master.menu.manager.project.list= Mis proyectos
+
