@@ -1,0 +1,24 @@
+#Invention Form #######################################################
+
+manager.invention.form.title= Formulario de Invención
+
+manager.invention.form.label.ticker = Ticker
+manager.invention.form.label.name= Nombre
+manager.invention.form.label.description = Descripción
+manager.invention.form.label.moreInfo = Más Info
+manager.invention.form.label.startMoment = Momento de inicio
+manager.invention.form.label.endMoment= Momento de fin
+manager.invention.form.label.cost= Coste
+manager.invention.form.label.monthsActive= Meses Activa
+
+manager.invention.form.label.parts = Partes
+
+
+#Invention List #######################################################
+
+manager.invention.list.title= Invenciones del proyecto
+
+manager.invention.list.label.ticker = Ticker
+manager.invention.list.label.name = Nombre
+manager.invention.list.label.startMoment = Momento de inicio
+manager.invention.list.label.endMoment = Momento de fin
