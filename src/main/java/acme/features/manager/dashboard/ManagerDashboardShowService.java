@@ -23,7 +23,7 @@ public class ManagerDashboardShowService extends AbstractService<Manager, Manage
 	@Override
 	public void load() {
 		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
-		this.dashboard = new ManagerDashboard();
+		this.dashboard = super.newObject(ManagerDashboard.class);
 
 		this.dashboard.setTotalProjects(this.repository.totalProjects(managerId));
 		this.dashboard.setDevTotalProjects(this.repository.devTotalProjects());
