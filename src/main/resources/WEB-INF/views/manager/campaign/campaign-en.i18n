@@ -1,0 +1,26 @@
+#Campaign Form #######################################################
+
+manager.campaign.form.title= Formulario de campaña
+
+
+manager.campaign.form.label.ticker = Ticker
+manager.campaign.form.label.name= Name
+manager.campaign.form.label.description = Description
+manager.campaign.form.label.moreInfo = More Info
+manager.campaign.form.label.startMoment = Start Moment
+manager.campaign.form.label.endMoment= End Moment
+manager.campaign.form.label.cost= Cost
+manager.campaign.form.label.monthsActive= Months Active
+
+manager.campaign.form.label.milestones = milestones
+
+
+#Campaign List #######################################################
+
+manager.campaign.list.title= Lista de campañas
+
+
+manager.campaign.list.label.ticker = Ticker
+manager.campaign.list.label.name = Name
+manager.campaign.list.label.startMoment = Start Moment
+manager.campaign.list.label.endMoment = End Moment

@@ -1,0 +1,24 @@
+#Strategy Form #######################################################
+
+manager.strategy.list.title= Estrategias del proyecto
+
+manager.strategy.form.label.ticker = Ticker
+manager.strategy.form.label.name= nombre
+manager.strategy.form.label.description = Descripción
+manager.strategy.form.label.moreInfo = Más info
+manager.strategy.form.label.startMoment = Momento de inicio
+manager.strategy.form.label.endMoment= Momento de fin
+manager.strategy.form.label.expectedPercentage= Porcentaje esperado
+manager.strategy.form.label.monthsActive= Meses activa
+
+manager.strategy.form.label.tactics = Tacticas
+
+
+#Strategy List #######################################################
+
+manager.strategy.form.title= Formulario de Estrategia
+
+manager.strategy.list.label.ticker = Ticker
+manager.strategy.list.label.name = Nombre
+manager.strategy.list.label.startMoment = Momento de inicio
+manager.strategy.list.label.endMoment = Momento de fin
