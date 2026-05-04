@@ -1,0 +1,21 @@
+# Project List
+member.project.list.title = Mis Proyectos
+member.project.list.label.title = Título
+member.project.list.label.keyWords = Palabras Clave
+member.project.list.label.kickOff = Fecha de Inicio
+member.project.list.label.closeOut = Fecha de Fin
+
+# Project Form (Show)
+member.project.form.title = Detalles del Proyecto
+member.project.form.label.title = Título
+member.project.form.label.keyWords = Palabras Clave
+member.project.form.label.description = Descripción
+member.project.form.label.kickOff = Fecha de Inicio
+member.project.form.label.closeOut = Fecha de Fin
+member.project.form.label.effort = Esfuerzo
+member.project.form.label.managerName = Manager
+
+# Buttons
+member.project.form.button.campaigns = Ver Campañas
+member.project.form.button.inventions = Ver Invenciones
+member.project.form.button.strategies = Ver Estrategias

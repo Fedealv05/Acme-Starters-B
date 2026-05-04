@@ -1,0 +1,16 @@
+# Campaign List
+member.campaign.list.title = Campañas del Proyecto
+member.campaign.list.label.ticker = Código
+member.campaign.list.label.name = Nombre
+member.campaign.list.label.startMoment = Momento de inicio
+member.campaign.list.label.endMoment = Momento de fin
+
+# Campaign Form (Show)
+member.campaign.form.title = Detalles de la Campaña
+member.campaign.form.label.ticker = Código
+member.campaign.form.label.name = Nombre
+member.campaign.form.label.description = Descripción
+member.campaign.form.label.moreInfo = Más Información
+member.campaign.form.label.startMoment = Momento de inicio
+member.campaign.form.label.endMoment = Momento de fin
+member.campaign.form.label.spokespersonName = Portavoz

@@ -1,0 +1,16 @@
+# Strategy List
+member.strategy.list.title = Estrategias del Proyecto
+member.strategy.list.label.ticker = Código
+member.strategy.list.label.name = Nombre
+member.strategy.list.label.startMoment = Momento de inicio
+member.strategy.list.label.endMoment = Momento de fin
+
+# Strategy Form (Show)
+member.strategy.form.title = Detalles de la Estrategia
+member.strategy.form.label.ticker = Código
+member.strategy.form.label.name = Nombre
+member.strategy.form.label.description = Descripción
+member.strategy.form.label.moreInfo = Más Información
+member.strategy.form.label.startMoment = Momento de inicio
+member.strategy.form.label.endMoment = Momento de fin
+member.strategy.form.label.fundraiserName = Recaudador

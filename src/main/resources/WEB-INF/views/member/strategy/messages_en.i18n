@@ -1,0 +1,16 @@
+# Strategy List
+member.strategy.list.title = Project Strategies
+member.strategy.list.label.ticker = Ticker
+member.strategy.list.label.name = Name
+member.strategy.list.label.startMoment = Start Moment
+member.strategy.list.label.endMoment = End Moment
+
+# Strategy Form (Show)
+member.strategy.form.title = Strategy Details
+member.strategy.form.label.ticker = Ticker
+member.strategy.form.label.name = Name
+member.strategy.form.label.description = Description
+member.strategy.form.label.moreInfo = More Info
+member.strategy.form.label.startMoment = Start Moment
+member.strategy.form.label.endMoment = End Moment
+member.strategy.form.label.fundraiserName = Fundraiser
