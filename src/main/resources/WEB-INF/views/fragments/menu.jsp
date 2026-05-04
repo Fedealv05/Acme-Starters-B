@@ -50,12 +50,15 @@
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.invention.list" action="/inventor/invention/list"/>
 		</acme:menu-option>
-			<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
+		<acme:menu-option code="master.menu.spokesperson" access="hasRealm('Spokesperson')">
 			<acme:menu-suboption code="master.menu.spokesperson.campaign.list" action="/spokesperson/campaign/list"/>
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.manager" access="hasRealm('Manager')">
 			<acme:menu-suboption code="master.menu.manager.dashboard.show" action="/manager/manager-dashboard/show"/>
 			<acme:menu-suboption code="master.menu.manager.project.list" action="/manager/project/list"/>
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.member" access="hasRealm('Member')">
+			<acme:menu-suboption code="master.menu.member.project.list" action="/member/project/list"/>
 		</acme:menu-option>
 	</acme:menu-left>
 
