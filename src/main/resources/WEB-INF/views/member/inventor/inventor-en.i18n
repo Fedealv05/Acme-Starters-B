@@ -1,0 +1,14 @@
+# Inventor List
+member.inventor.list.label.username = Username
+member.inventor.list.label.bio = Bio
+member.inventor.list.label.licensed = Licensed
+
+
+# Inventor Form (Show)
+member.inventor.form.label.username = Username
+member.inventor.form.label.bio = Bio
+member.inventor.form.label.keywords = Key Words
+member.inventor.form.label.licensed = Licensed
+
+member.inventor.list.title = Inventors
+member.inventor.form.title = Inventor

@@ -20,6 +20,9 @@
         <acme:button code="member.project.form.button.campaigns" action="/member/campaign/list?projectId=${id}"/>
         <acme:button code="member.project.form.button.inventions" action="/member/invention/list?projectId=${id}"/>
         <acme:button code="member.project.form.button.strategies" action="/member/strategy/list?projectId=${id}"/>
+        <acme:button code="member.project.form.button.inventors" action="/member/inventor/list?projectId=${id}"/>
+        <acme:button code="member.project.form.button.spokespersons" action="/member/spokesperson/list?projectId=${id}"/>
+        <acme:button code="member.project.form.button.fundraisers" action="/member/fundraiser/list?projectId=${id}"/>
     </jstl:if>
 
 </acme:form>

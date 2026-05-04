@@ -1,0 +1,14 @@
+# Inventor List
+member.fundraiser.list.label.username = Username
+member.fundraiser.list.label.bank = Bank
+member.fundraiser.list.label.agent = Agent
+
+
+# Inventor Form (Show)
+member.fundraiser.form.label.username = Username
+member.fundraiser.form.label.bank = Bank
+member.fundraiser.form.label.statement = Statement
+member.fundraiser.form.label.agent = Agent
+
+member.fundraiser.list.title = Fundraisers
+member.fundraiser.form.title = Fundraiser

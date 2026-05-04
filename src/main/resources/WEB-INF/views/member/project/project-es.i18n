@@ -19,3 +19,6 @@ member.project.form.label.managerName = Manager
 member.project.form.button.campaigns = Ver Campañas
 member.project.form.button.inventions = Ver Invenciones
 member.project.form.button.strategies = Ver Estrategias
+member.project.form.button.inventors = Ver Inventores
+member.project.form.button.spokespersons = Ver Portavoces
+member.project.form.button.fundraisers = Ver Recaudadores
