@@ -86,9 +86,3 @@ master.menu.manager= Manager
 master.menu.manager.project.list= My projects
 
 
-# master.menu.member #####################################################
-master.menu.member=Member
-master.menu.member.project.list= Projects
-
-
-
