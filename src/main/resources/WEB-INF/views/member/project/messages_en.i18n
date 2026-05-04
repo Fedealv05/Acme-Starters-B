@@ -1,0 +1,21 @@
+# Project List
+member.project.list.title = My Projects
+member.project.list.label.title = Title
+member.project.list.label.keyWords = Key Words
+member.project.list.label.kickOff = Kick Off
+member.project.list.label.closeOut = Close Out
+
+# Project Form (Show)
+member.project.form.title = Project Details
+member.project.form.label.title = Title
+member.project.form.label.keyWords = Key Words
+member.project.form.label.description = Description
+member.project.form.label.kickOff = Kick Off
+member.project.form.label.closeOut = Close Out
+member.project.form.label.effort = Effort
+member.project.form.label.managerName = Manager
+
+# Buttons
+member.project.form.button.campaigns = View Campaigns
+member.project.form.button.inventions = View Inventions
+member.project.form.button.strategies = View Strategies

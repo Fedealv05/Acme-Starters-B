@@ -1,0 +1,16 @@
+# Campaign List
+member.campaign.list.title = Project Campaigns
+member.campaign.list.label.ticker = Ticker
+member.campaign.list.label.name = Name
+member.campaign.list.label.startMoment = Start Moment
+member.campaign.list.label.endMoment = End Moment
+
+# Campaign Form (Show)
+member.campaign.form.title = Campaign Details
+member.campaign.form.label.ticker = Ticker
+member.campaign.form.label.name = Name
+member.campaign.form.label.description = Description
+member.campaign.form.label.moreInfo = More Info
+member.campaign.form.label.startMoment = Start Moment
+member.campaign.form.label.endMoment = End Moment
+member.campaign.form.label.spokespersonName = Spokesperson

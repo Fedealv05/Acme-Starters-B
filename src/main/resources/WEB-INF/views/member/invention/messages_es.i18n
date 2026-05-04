@@ -1,0 +1,16 @@
+# Invention List
+member.invention.list.title = Invenciones del Proyecto
+member.invention.list.label.ticker = Código
+member.invention.list.label.name = Nombre
+member.invention.list.label.startMoment = Momento de inicio
+member.invention.list.label.endMoment = Momento de fin
+
+# Invention Form (Show)
+member.invention.form.title = Detalles de la Invención
+member.invention.form.label.ticker = Código
+member.invention.form.label.name = Nombre
+member.invention.form.label.description = Descripción
+member.invention.form.label.moreInfo = Más Información
+member.invention.form.label.startMoment = Momento de inicio
+member.invention.form.label.endMoment = Momento de fin
+member.invention.form.label.inventorName = Inventor
