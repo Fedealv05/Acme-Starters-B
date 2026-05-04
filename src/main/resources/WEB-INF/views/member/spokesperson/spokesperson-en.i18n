@@ -1,0 +1,14 @@
+# Inventor List
+member.spokesperson.list.label.username = Username
+member.spokesperson.list.label.cv = CV
+member.spokesperson.list.label.licensed = Licensed
+
+
+# Inventor Form (Show)
+member.spokesperson.form.label.username = Username
+member.spokesperson.form.label.cv = CV
+member.spokesperson.form.label.achievements = Achievements
+member.spokesperson.form.label.licensed = Licensed
+
+member.spokesperson.list.title = Spokespersons
+member.spokesperson.form.title = Spokesperson
