@@ -26,6 +26,6 @@ public class ProjectMember extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Member				participant;
+	private Member				member;
 
 }
