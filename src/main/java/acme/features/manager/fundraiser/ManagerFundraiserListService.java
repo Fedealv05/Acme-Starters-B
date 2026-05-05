@@ -31,7 +31,7 @@ public class ManagerFundraiserListService extends AbstractService<Manager, Fundr
 		int id;
 		id = this.getRequest().getData("projectId", int.class);
 
-		this.fundraisers = this.repository.findAssignedFundraiser(id);
+		this.fundraisers = this.repository.findAssignedFundraisers(id);
 
 		this.project = this.projectRepository.findProjectById(id);
 	}
