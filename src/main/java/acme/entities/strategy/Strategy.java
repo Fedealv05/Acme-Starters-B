@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
@@ -78,7 +79,7 @@ public class Strategy extends AbstractEntity {
 	@ManyToOne(optional = false)
 	private Fundraiser			fundraiser;
 
-	@OneToMany(mappedBy = "strategy")
+	@OneToMany(mappedBy = "strategy", fetch = FetchType.EAGER)
 	private Collection<Tactic>	tactics;
 
 	@Valid

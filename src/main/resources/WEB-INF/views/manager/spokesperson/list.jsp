@@ -9,5 +9,5 @@
 <acme:list-column code="manager.spokesperson.list.label.licensed" path="licensed" width="25%" />
 </acme:list>
 
-<acme:button code="manager.project.list.button.addMember" action="/manager/project-member/create?projectId=${projectId}&role=SPOKESPERSON"/>
-<acme:button code="manager.project.list.button.deleteMember" action="/manager/project-member/delete?projectId=${projectId}&role=SPOKESPERSON"/>
+<acme:button code="manager.spokesperson.list.button.addMember" action="/manager/project-member/create?projectId=${projectId}&role=SPOKESPERSON"/>
+<acme:button code="manager.spokesperson.list.button.deleteMember" action="/manager/project-member/delete?projectId=${projectId}&role=SPOKESPERSON"/>

@@ -1,0 +1,7 @@
+manager.project-member.form.title= Manage Members
+manager.projectmember.form.label.userChoices= Members
+manager.project.list.button.addMember= Add Member
+manager.project.list.button.deleteMember= Delete Member
+
+projectMember.create.validation.missingUser = The selected user is not valid
+projectMember.delete.validation.missingUser = The selected user is not valid

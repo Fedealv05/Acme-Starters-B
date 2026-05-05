@@ -1,0 +1,20 @@
+manager.inventor.form.title =Inventor fomr
+
+manager.inventor.form.label.bio = Bio
+manager.inventor.form.label.keyWords = Keywords
+manager.inventor.form.label.licensed = Licensed
+
+
+manager.inventor.list.title = Inventores
+
+manager.inventor.list.label.bio = Bio
+manager.inventor.list.label.keyWords = Keywords
+manager.inventor.list.label.licensed = Licensed
+
+
+
+manager.fundraiser.form.label.userAccount.username= UserName
+manager.inventor.list.label.username = username
+
+manager.inventor.list.button.addMember= Add Inventor
+manager.inventor.list.button.deleteMember = Delete Inventor

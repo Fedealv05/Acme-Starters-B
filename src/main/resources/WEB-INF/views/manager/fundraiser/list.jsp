@@ -11,6 +11,6 @@
 
 </acme:list>
 
-<acme:button code="manager.project.list.button.addMember" action="/manager/project-member/create?projectId=${projectId}&role=FUNDRAISER"/>
-<acme:button code="manager.project.list.button.deleteMember" action="/manager/project-member/delete?projectId=${projectId}&role=FUNDRAISER"/>
+<acme:button code="manager.fundraiser.list.button.addMember" action="/manager/project-member/create?projectId=${projectId}&role=FUNDRAISER"/>
+<acme:button code="manager.fundraiser.list.button.deleteMember" action="/manager/project-member/delete?projectId=${projectId}&role=FUNDRAISER"/>
 
