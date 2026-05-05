@@ -95,28 +95,31 @@ public class Project extends AbstractEntity {
 	public Double getEffort() {
 		double totalMonths = 0.0;
 		Set<Integer> uniqueMemberIds = new HashSet<>();
+		if (this.inventionRepository != null) {
+			Collection<Invention> inventions = this.inventionRepository.findByProjectId(this.getId());
+			if (inventions != null)
+				for (Invention inv : inventions) {
+					totalMonths += inv.getMonthsActive();
+					uniqueMemberIds.add(inv.getInventor().getId());
+				}
+		}
+		if (this.campaignRepository != null) {
 
-		Collection<Invention> inventions = this.inventionRepository.findByProjectId(this.getId());
-		if (inventions != null)
-			for (Invention inv : inventions) {
-				totalMonths += inv.getMonthsActive();
-				uniqueMemberIds.add(inv.getInventor().getId());
-			}
-
-		Collection<Campaign> campaigns = this.campaignRepository.findByProjectId(this.getId());
-		if (campaigns != null)
-			for (Campaign cam : campaigns) {
-				totalMonths += cam.getMonthsActive();
-				uniqueMemberIds.add(cam.getSpokesperson().getId());
-			}
-
-		Collection<Strategy> strategies = this.strategyRepository.findByProjectId(this.getId());
-		if (strategies != null)
-			for (Strategy str : strategies) {
-				totalMonths += str.getMonthsActive();
-				uniqueMemberIds.add(str.getFundraiser().getId());
-			}
-
+			Collection<Campaign> campaigns = this.campaignRepository.findByProjectId(this.getId());
+			if (campaigns != null)
+				for (Campaign cam : campaigns) {
+					totalMonths += cam.getMonthsActive();
+					uniqueMemberIds.add(cam.getSpokesperson().getId());
+				}
+		}
+		if (this.strategyRepository != null) {
+			Collection<Strategy> strategies = this.strategyRepository.findByProjectId(this.getId());
+			if (strategies != null)
+				for (Strategy str : strategies) {
+					totalMonths += str.getMonthsActive();
+					uniqueMemberIds.add(str.getFundraiser().getId());
+				}
+		}
 		int numberOfPeople = uniqueMemberIds.size();
 
 		if (numberOfPeople == 0)
