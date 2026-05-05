@@ -1,0 +1,22 @@
+#Milestone Form #######################################################
+
+manager.milestone.form.label.title = Título
+manager.milestone.form.label.kind = Tipo
+manager.milestone.form.label.achievements = Logros
+manager.milestone.form.label.effort = Esfuerzo
+
+manager.milestone.form.button.create = Crear
+manager.milestone.form.button.update= Editar
+manager.milestone.form.button.delete = Eliminar
+
+manager.milestone.form.title = Hito
+
+#Milestone List #######################################################
+
+manager.milestone.list.label.title = Título
+manager.milestone.list.label.kind = Tipo
+manager.milestone.list.label.effort = Esfuerzo
+
+manager.milestone.list.button.create= Crear
+
+manager.milestone.list.title = Hitos

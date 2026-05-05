@@ -1,0 +1,21 @@
+manager.fundraiser.form.label.bank = Bank
+manager.fundraiser.form.label.statement = Statement
+manager.fundraiser.form.label.agent = Is agent?
+manager.fundraiser.form.button.create = Create
+manager.fundraiser.form.button.update = Update
+manager.fundraiser.form.title = Fundraiser form
+
+manager.fundraiser.form.label.userAccount.username= Username
+
+
+manager.fundraiser.list.label.bank = Bank
+manager.fundraiser.list.label.statement = Statement
+manager.fundraiser.list.label.agent = Is agent?
+manager.fundraiser.list.button.create = Create
+manager.fundraiser.list.button.update = Update
+manager.fundraiser.list.title = Fundraisers List
+
+manager.fundraiser.list.label.username= Username
+
+manager.fundraiser.list.button.addMember= Add Fundraiser
+manager.fundraiser.list.button.deleteMember = Delete Fundraiser

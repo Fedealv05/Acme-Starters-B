@@ -1,0 +1,11 @@
+manager.tactic.form.label.name = Nombre
+manager.tactic.form.label.notes = Notas
+manager.tactic.form.label.expectedPercentage =  Porcentaje Esperado
+manager.tactic.form.label.kind =  Tipo
+
+manager.tactic.list.title = Tácticas
+manager.tactic.form.title = Formulario de Táctica
+
+manager.tactic.list.label.name= Nombre
+manager.tactic.list.label.notes= Notas
+manager.tactic.list.label.kind = Tipo

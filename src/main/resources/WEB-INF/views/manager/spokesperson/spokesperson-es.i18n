@@ -1,0 +1,14 @@
+manager.spokesperson.list.label.username = Nombre de usuario
+manager.spokesperson.list.label.cv = cv
+manager.spokesperson.list.label.licensed = Licenciado
+
+manager.spokesperson.list.button.addMember = Añadir Portavoz
+manager.spokesperson.list.button.deleteMember= Eliminar Portavoz
+manager.spokesperson.list.title= Portavoces
+
+manager.spokesperson.form.label.userAccount.username = Nombre de usuario
+manager.spokesperson.form.label.cv= cv
+manager.spokesperson.form.label.achievements = Logros
+manager.spokesperson.form.label.licensed  = Licenciado
+
+manager.spokesperson.form.title = Formulario de portavoz

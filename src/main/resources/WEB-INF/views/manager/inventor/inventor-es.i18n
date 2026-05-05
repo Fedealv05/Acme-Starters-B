@@ -1,0 +1,24 @@
+manager.inventor.form.title =Detalles del inventor
+
+manager.inventor.form.label.bio = Bio
+manager.inventor.form.label.keyWords = Palabras clave
+manager.inventor.form.label.licensed = Licenciado
+
+manager.inventor.form.button.create = Registrar
+manager.inventor.form.button.update = Actualizar
+
+manager.inventor.list.title =Inventores
+
+manager.inventor.list.label.bio = Bio
+manager.inventor.list.label.keyWords = Palabras clave
+manager.inventor.list.label.licensed = Licenciado
+
+manager.inventor.list.button.create = Registrar
+manager.inventor.list.button.update = Actualizar
+
+manager.fundraiser.form.label.userAccount.username= Nombre de usuario
+
+manager.inventor.list.label.username=  Nombre de usuario
+
+manager.inventor.list.button.addMember= Añadir Inventor
+manager.inventor.list.button.deleteMember = Eliminar Inventor
