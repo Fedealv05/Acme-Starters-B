@@ -22,12 +22,19 @@ public class AnyCampaignListService extends AbstractService<Any, Campaign> {
 	@Override
 	public void load() {
 
-		this.campaigns = this.repository.findByDraftModeFalse();
+		if (super.getRequest().hasData("projectId"))
+			this.campaigns = this.repository.findByProjectId(this.getRequest().getData("projectId", Integer.class));
+
+		else
+			this.campaigns = this.repository.findByDraftModeFalse();
 	}
 
 	@Override
 	public void authorise() {
-		boolean status = true;
+		boolean todosPublicados = true;
+		if (super.getRequest().hasData("projectId"))
+			todosPublicados = this.campaigns.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+		boolean status = this.campaigns != null && todosPublicados;
 		super.setAuthorised(status);
 	}
 

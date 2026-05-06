@@ -18,6 +18,7 @@ public class AnyInventorController extends AbstractController<Any, Inventor> {
 
 		super.setMediaType(MediaType.TEXT_HTML);
 		super.addBasicCommand("show", AnyInventorShowService.class);
+		super.addBasicCommand("list", AnyInventorListService.class);
 
 	}
 

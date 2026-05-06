@@ -5,3 +5,10 @@ any.inventor.form.label.licensed= Licensed
 any.inventor.form.label.userAccount.username = Username
 
 any.inventor.form.title= Inventor
+
+any.inventor.list.label.bio = Bio
+any.inventor.list.label.keyWords = Keywords
+any.inventor.list.label.licensed = Licensed
+any.inventor.list.label.username= Username
+
+any.inventor.list.title = Inventors

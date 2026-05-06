@@ -1,0 +1,22 @@
+#Part Form #######################################################
+
+manager.part.form.label.name = Name
+manager.part.form.label.kind = Kind
+manager.part.form.label.description = Description
+manager.part.form.label.cost = Cost
+
+manager.part.form.button.create = Create
+manager.part.form.button.update= Update
+manager.part.form.button.delete = Delete
+
+manager.part.form.title = Part
+
+#Part List #######################################################
+
+manager.part.list.label.name = Name
+manager.part.list.label.kind = Kind
+manager.part.list.label.cost = Cost
+
+manager.part.list.button.create= Create
+
+manager.part.list.title = Parts

@@ -1,0 +1,19 @@
+manager.fundraiser.form.label.bank = Banco
+manager.fundraiser.form.label.statement = Propuesta de valor
+manager.fundraiser.form.label.agent = Es agente?
+
+manager.fundraiser.form.title = Formulario de recaudador
+
+manager.fundraiser.form.label.userAccount.username= Nombre de usuario
+
+
+manager.fundraiser.list.label.bank = Banco
+manager.fundraiser.list.label.statement = Propuesta de valor
+manager.fundraiser.list.label.agent = Es agente?
+
+manager.fundraiser.list.title = Lista de recaudadores
+
+manager.fundraiser.list.label.username= Nombre de usuario
+
+manager.fundraiser.list.button.addMember= Añadir Recaudador
+manager.fundraiser.list.button.deleteMember = Eliminar Recaudador

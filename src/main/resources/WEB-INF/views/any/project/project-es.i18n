@@ -1,0 +1,38 @@
+#Project List #######################################################
+
+any.project.list.title = Mis proyectos
+
+any.project.list.label.title= Título
+any.project.list.label.keyWords = Palabras clave
+any.project.list.label.kickOff= Inicio
+any.project.list.label.closeOut= Cierre
+
+any.project.list.button.create= Crear
+
+
+#Project Form #######################################################
+
+any.project.form.title = Formulario de proyecto
+
+any.project.form.label.title = Título
+any.project.form.label.keyWords= Palabras clave
+any.project.form.label.description= Descripción
+any.project.form.label.kickOff = Inicio
+any.project..form.label.closeOut = Cierre
+any.invention.form.label.effort = Esfuerzo
+
+any.project.form.button.inventions = Invenciones
+any.project.form.button.campaigns = Campañas
+any.project.form.button.strategies = Estrategias
+
+any.project.form.button.update = Actualizar
+any.project.form.button.delete = Eliminar
+any.project.form.button.publish = Publicar
+any.project.form.button.create= Crear
+
+acme.validation.project.timeInterval.message = La fecha de fin debe ser posterior a la fecha de inicio
+acme.validation.project.draftMode.message = El proyecto debe tener al menos una invención para ser publicado
+
+any.inventor.form.button.list = Inventores
+any.fundraiser.form.button.list = Recaudadores
+any.spokesperson.form.button.list  = Portavoces 

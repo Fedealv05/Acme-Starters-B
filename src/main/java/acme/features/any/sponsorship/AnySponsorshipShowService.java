@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Any;
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorships.Sponsorship;
 
@@ -35,8 +36,18 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "totalMoney", "monthsActive");
+		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "totalMoney");
+		super.unbindGlobal("id", this.sponsorship.getId());
 		super.unbindGlobal("sponsorId", this.sponsorship.getSponsor().getId());
+		if (this.sponsorship.getProject() != null) {
+			super.unbindGlobal("title", this.sponsorship.getProject().getTitle());
+			if (this.sponsorship.getSponsor().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId()) {
+				super.unbindGlobal("projectId", this.sponsorship.getProject().getId());
+				if (MomentHelper.getCurrentMoment().before(this.sponsorship.getProjectUnassignMoment()))
+					super.unbindGlobal("projectUnasssignMoment", true);
+			}
+		}
+
 	}
 
 }

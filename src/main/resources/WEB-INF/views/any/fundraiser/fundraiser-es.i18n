@@ -4,3 +4,10 @@ any.fundraiser.form.label.statement = Declaración
 any.fundraiser.form.label.agent = Es Agente
 
 any.fundraiser.form.title = Perfil del Recaudador
+
+any.fundraiser.list.label.bank = Banco
+any.fundraiser.list.label.statement = Propuesta de valor
+any.fundraiser.list.label.agent = Es agente?
+
+any.fundraiser.list.title = Recaudadores
+any.fundraiser.list.label.username = Nombre de usuario

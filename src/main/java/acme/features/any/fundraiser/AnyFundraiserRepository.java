@@ -1,6 +1,8 @@
 
 package acme.features.any.fundraiser;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
@@ -13,5 +15,8 @@ public interface AnyFundraiserRepository extends AbstractRepository {
 
 	@Query("select f from Fundraiser f where f.id = :id")
 	Fundraiser findFundraiserById(@Param("id") int id);
+
+	@Query("select f from Fundraiser f where f.userAccount.id in (" + "select ua.id from ProjectMember mp " + "join mp.member m " + "join m.userAccount ua " + "where mp.project.id = :projectId" + ")")
+	List<Fundraiser> findAssignedFundraisers(int projectId);
 
 }

@@ -31,5 +31,12 @@ manager.project.form.button.publish = Publish
 manager.project.form.button.create= Create
 
 acme.validation.project.timeInterval.message = The Closeout date must be after the Kick-Off date
-acme.validation.project.draftMode.message = The project must have at least one invention to be published
+acme.validation.project.draftMode.message = The project must have at least one invention to be 
+
+project.publish.validation.hasAtLeastOneInvention = The project must have at least 1 invention to be published
+
+manager.inventor.form.button.list = Inventors
+manager.fundraiser.form.button.list = Fundraisers
+manager.spokesperson.form.button.list  = Spokespersons    
+
 

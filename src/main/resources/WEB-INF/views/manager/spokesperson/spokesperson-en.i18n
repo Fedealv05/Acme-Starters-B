@@ -1,0 +1,14 @@
+manager.spokesperson.list.label.username = Username
+manager.spokesperson.list.label.cv = cv
+manager.spokesperson.list.label.licensed = Licensed
+
+manager.spokesperson.list.button.addMember = Add spokesperson
+manager.spokesperson.list.button.deleteMember= Delete Spokesperson
+manager.spokesperson.list.title= Spokespersons
+
+manager.spokesperson.form.label.userAccount.username = Username
+manager.spokesperson.form.label.cv= cv
+manager.spokesperson.form.label.achievements = Achievements
+manager.spokesperson.form.label.licensed  =Licensed
+
+manager.spokesperson.form.title = Spokesperson form

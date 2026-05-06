@@ -1,43 +1,137 @@
-# Sponsorship - Lista
-sponsor.sponsorship.list.label.ticker = Ticker
-sponsor.sponsorship.list.label.name = Nombre
-sponsor.sponsorship.list.label.startMoment = Momento de inicio
-sponsor.sponsorship.list.label.endMoment = Momento de fin
-sponsor.sponsorship.list.label.draftMode = ¿Borrador?
-sponsor.sponsorship.list.button.create = Crear patrocinio
+# =========================
+# VALIDATION
+# =========================
+acme.validation.header.message = Cadena inválida
+acme.validation.text.message = Texto inválido
 
-# Sponsorship - Formulario (Etiquetas)
-sponsor.sponsorship.form.label.ticker = Ticker
+# =========================
+# SPONSOR - PROJECT
+# =========================
+sponsor.project.list.title = Proyectos
+sponsor.project.list.label.title = Título
+sponsor.project.list.label.keyWords = Palabras clave
+sponsor.project.list.label.kickOff = Inicio
+sponsor.project.list.label.closeOut = Finalización
+
+sponsor.project.form.title = Detalles del proyecto
+sponsor.project.form.label.title = Título
+sponsor.project.form.label.keyWords = Palabras clave
+sponsor.project.form.label.description = Descripción
+sponsor.project.form.label.kickOff = Inicio
+sponsor.project.form.label.closeOut = Finalización
+sponsor.project.form.label.effort = Esfuerzo
+
+sponsor.project.form.button.inventions = Inventos
+sponsor.project.form.button.campaigns = Campañas
+sponsor.project.form.button.strategies = Estrategias
+sponsor.project.form.button.sponsorships = Patrocinios
+
+any.project.button.create = Crear proyecto
+master.menu.projects.list = Proyectos
+
+# =========================
+# SPONSOR - SPONSORSHIP
+# =========================
+sponsor.sponsorship.list.title = Patrocinios
+sponsor.sponsorship.list.label.ticker = Identificador
+sponsor.sponsorship.list.label.name = Nombre
+sponsor.sponsorship.list.label.startMoment = Momento inicial
+sponsor.sponsorship.list.label.endMoment = Momento final
+sponsor.sponsorship.list.label.draftMode = ¿Borrador?
+
+sponsor.sponsorship.form.title = Detalles del patrocinio
+sponsor.sponsorship.form.label.ticker = Identificador
 sponsor.sponsorship.form.label.name = Nombre
 sponsor.sponsorship.form.label.description = Descripción
 sponsor.sponsorship.form.label.moreInfo = Más información (URL)
-sponsor.sponsorship.form.label.startMoment = Momento de inicio
-sponsor.sponsorship.form.label.endMoment = Momento de fin
+sponsor.sponsorship.form.label.startMoment = Momento inicial
+sponsor.sponsorship.form.label.endMoment = Momento final
 sponsor.sponsorship.form.label.totalMoney = Dinero total
-sponsor.sponsorship.form.label.monthsActive = Meses activo
+sponsor.sponsorship.form.label.monthsActive = Meses activos
 
-# Sponsorship - Formulario (Botones)
-sponsor.sponsorship.form.button.donations = Ver donaciones
+sponsor.sponsorship.form.button.donations = Donaciones
 sponsor.sponsorship.form.button.update = Actualizar
-sponsor.sponsorship.form.button.delete = Borrar
+sponsor.sponsorship.form.button.delete = Eliminar
 sponsor.sponsorship.form.button.publish = Publicar
 sponsor.sponsorship.form.button.create = Crear
 
-sponsor.sponsorship.list.title = Patrocinios
-sponsor.sponsorship.form.title = Detalles del patrocinio
-sponsor.donation.form.button.create = Crear donación
+sponsor.sponsorship.button.unassign = Desasignar proyecto
 
+sponsor.sponsorship-project.form.title = Asignar patrocinio a proyecto
 
+# =========================
+# SPONSORSHIP ASSIGNMENT
+# =========================
+sponsor.sponsorship-assignment.list = Patrocinios disponibles
+sponsor.sponsorship-assignment.button.create = Asignar proyecto
+sponsor.sponsorship-assignment.error.sponsorshipId.required = Debe seleccionar un patrocinio
+
+# =========================
+# DONATION
+# =========================
 sponsor.donation.list.title = Donaciones
 sponsor.donation.form.title = Detalles de la donación
 
-sponsor.donation.form.label.kind = Tipo
+sponsor.donation.list.label.kind = Tipo
 any.donation.list.label.kind = Tipo
 
 sponsor.donation.list.button.create = Crear donación
+sponsor.donation.form.button.create = Crear donación
 sponsor.donation.form.button.update = Actualizar donación
-sponsor.donation.form.button.delete = Borrar donación
+sponsor.donation.form.button.delete = Eliminar donación
 
+sponsor.donation.form.label.kind = Tipo
 
-acme.validation.header.message = Cadena inválida
-acme.validation.text.message = Texto inválido
+# =========================
+# CAMPAIGN
+# =========================
+sponsor.campaign.list.label.ticker = Identificador
+sponsor.campaign.list.label.name = Nombre
+sponsor.campaign.list.label.startMoment = Momento inicial
+sponsor.campaign.list.label.endMoment = Momento final
+
+sponsor.campaign.form.label.ticker = Identificador
+sponsor.campaign.form.label.name = Nombre
+sponsor.campaign.form.label.description = Descripción
+sponsor.campaign.form.label.moreInfo = Más información
+sponsor.campaign.form.label.startMoment = Momento inicial
+sponsor.campaign.form.label.endMoment = Momento final
+sponsor.campaign.form.label.cost = Coste
+sponsor.campaign.form.label.monthsActive = Meses activos
+sponsor.campaign.form.label.milestones = Hitos
+
+# =========================
+# INVENTION
+# =========================
+sponsor.invention.list.label.ticker = Identificador
+sponsor.invention.list.label.name = Nombre
+sponsor.invention.list.label.startMoment = Momento inicial
+sponsor.invention.list.label.endMoment = Momento final
+
+sponsor.invention.form.label.ticker = Identificador
+sponsor.invention.form.label.name = Nombre
+sponsor.invention.form.label.description = Descripción
+sponsor.invention.form.label.moreInfo = Más información
+sponsor.invention.form.label.startMoment = Momento inicial
+sponsor.invention.form.label.endMoment = Momento final
+sponsor.invention.form.label.cost = Coste
+sponsor.invention.form.label.monthsActive = Meses activos
+sponsor.invention.form.label.parts = Partes
+
+# =========================
+# STRATEGY
+# =========================
+sponsor.strategy.list.label.ticker = Identificador
+sponsor.strategy.list.label.name = Nombre
+sponsor.strategy.list.label.startMoment = Momento inicial
+sponsor.strategy.list.label.endMoment = Momento final
+
+sponsor.strategy.form.label.ticker = Identificador
+sponsor.strategy.form.label.name = Nombre
+sponsor.strategy.form.label.description = Descripción
+sponsor.strategy.form.label.moreInfo = Más información
+sponsor.strategy.form.label.startMoment = Momento inicial
+sponsor.strategy.form.label.endMoment = Momento final
+sponsor.strategy.form.label.expectedPercentage = Porcentaje esperado
+sponsor.strategy.form.label.monthsActive = Meses activos
+sponsor.strategy.form.label.tactics = Tácticas

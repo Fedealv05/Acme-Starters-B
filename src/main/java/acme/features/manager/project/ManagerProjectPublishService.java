@@ -62,7 +62,7 @@ public class ManagerProjectPublishService extends AbstractService<Manager, Proje
 
 	@Override
 	public void bind() {
-		super.bindObject(this.project, "title", "keyWords", "description", "kickOff", "closeOut");
+		super.bindObject(this.project);
 	}
 
 	@Override

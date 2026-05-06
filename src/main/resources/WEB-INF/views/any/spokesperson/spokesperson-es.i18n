@@ -5,3 +5,13 @@ any.spokesperson.form.label.licensed= Tiene licencia
 any.spokesperson.form.label.userAccount.username = Nombre de usuario
 
 any.spokesperson.form.title= Portavoz
+
+any.spokesperson.list.button.addMember = Add spokesperson
+any.spokesperson.list.button.deleteMember= Delete Spokesperson
+any.spokesperson.list.title= Spokespersons
+
+any.spokesperson.list.label.username = Nombre de usuario
+any.spokesperson.list.label.cv = cv
+any.spokesperson.list.label.licensed = Licenciado
+
+any.spokesperson.list.title = Portavoces

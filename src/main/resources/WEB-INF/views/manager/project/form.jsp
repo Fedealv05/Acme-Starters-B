@@ -17,6 +17,11 @@
         <acme:button code="manager.project.form.button.inventions" action="/manager/invention/list?projectId=${id}"/>
         <acme:button code="manager.project.form.button.campaigns" action="/manager/campaign/list?projectId=${id}"/>
         <acme:button code="manager.project.form.button.strategies" action="/manager/strategy/list?projectId=${id}"/>
+        <acme:button code="manager.inventor.form.button.list" action="/manager/inventor/list?projectId=${id}"/>
+        <acme:button code="manager.fundraiser.form.button.list" action="/manager/fundraiser/list?projectId=${id}"/>
+        <acme:button code="manager.spokesperson.form.button.list" action="/manager/spokesperson/list?projectId=${id}"/>
+        
+    
     </jstl:when>
     <jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') && draftMode == true}">
 <acme:button code="manager.project.form.button.inventions" action="/manager/invention/list?projectId=${id}"/>
@@ -25,6 +30,9 @@
         <acme:submit code="manager.project.form.button.update" action="/manager/project/update"/>
         <acme:submit code="manager.project.form.button.delete" action="/manager/project/delete"/>
         <acme:submit code="manager.project.form.button.publish" action="/manager/project/publish"/>
+        <acme:button code="manager.inventor.form.button.list" action="/manager/inventor/list?projectId=${id}"/>
+        <acme:button code="manager.fundraiser.form.button.list" action="/manager/fundraiser/list?projectId=${id}"/>
+        <acme:button code="manager.spokesperson.form.button.list" action="/manager/spokesperson/list?projectId=${id}"/>        
     </jstl:when>
     <jstl:when test="${_command == 'create'}">
         <acme:submit code="manager.project.form.button.create" action="/manager/project/create"/>

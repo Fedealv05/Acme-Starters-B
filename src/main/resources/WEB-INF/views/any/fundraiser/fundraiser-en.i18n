@@ -4,3 +4,10 @@ any.fundraiser.form.label.statement = Statement
 any.fundraiser.form.label.agent = Is Agent
 
 any.fundraiser.form.title = Fundraiser Profile
+
+any.fundraiser.list.label.bank = Bank
+any.fundraiser.list.label.statement = Statement
+any.fundraiser.list.label.agent = Is agent?
+
+any.fundraiser.list.title = Fundraisers
+any.fundraiser.list.label.username = Username
