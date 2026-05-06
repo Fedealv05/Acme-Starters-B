@@ -39,7 +39,9 @@ public class MemberProjectShowService extends AbstractService<Member, Project> {
 	@Override
 	public void unbind() {
 		super.unbindObject(this.project, "title", "keyWords", "description", "kickOff", "closeOut", "draftMode", "effort");
-		super.unbindGlobal("managerName", this.project.getManager().getUserAccount().getIdentity().getFullName());
+		super.unbindGlobal("id", this.project.getId());
+		super.unbindGlobal("managerId", this.project.getManager().getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
 	}
 
 }

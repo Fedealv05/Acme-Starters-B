@@ -13,4 +13,9 @@ member.campaign.form.label.description = Descripción
 member.campaign.form.label.moreInfo = Más Información
 member.campaign.form.label.startMoment = Momento de inicio
 member.campaign.form.label.endMoment = Momento de fin
-member.campaign.form.label.spokespersonName = Portavoz
+
+
+member.campaign.milestone.form.button.milestones = Ver hitos 
+member.campaign.button.spokesperson.create = Asignar ampaña
+member.campaign.button.unassign = Desaignar Campaña
+any.campaign.button.spokesperson = Ver Portavoz

@@ -1,0 +1,17 @@
+#Part Form #######################################################
+
+member.part.form.label.name = Name
+member.part.form.label.kind = Kind
+member.part.form.label.description= Description
+member.part.form.label.cost = Cost
+
+member.part.form.title = Part
+
+#Part List #######################################################
+
+member.part.list.label.name = Name
+member.part.list.label.kind = Kind
+member.part.list.label.cost = Cost
+
+member.part.list.title = Parts
+

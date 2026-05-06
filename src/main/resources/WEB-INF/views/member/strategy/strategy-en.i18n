@@ -14,3 +14,8 @@ member.strategy.form.label.moreInfo = More Info
 member.strategy.form.label.startMoment = Start Moment
 member.strategy.form.label.endMoment = End Moment
 member.strategy.form.label.fundraiserName = Fundraiser
+
+member.strategy.form.button.tactics = View Tactics
+member.project.button.fundraiser.create = Assign Strategy
+any.strategy.form.label.fundraiser = View Fundraiser
+member.strategy.button.unassign = Unassign Strategy

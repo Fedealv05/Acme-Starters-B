@@ -9,3 +9,7 @@
     <acme:list-column code="member.invention.list.label.startMoment" path="startMoment" width="20%" />
     <acme:list-column code="member.invention.list.label.endMoment" path="endMoment" width="20%" />
 </acme:list>
+
+<jstl:if test="${isInventor && draftMode}">
+     <acme:button code="member.project.button.inventor.create" action="/inventor/invention-assignment/create?projectId=${projectId}"/>
+</jstl:if>

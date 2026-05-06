@@ -13,4 +13,8 @@ member.campaign.form.label.description = Description
 member.campaign.form.label.moreInfo = More Info
 member.campaign.form.label.startMoment = Start Moment
 member.campaign.form.label.endMoment = End Moment
-member.campaign.form.label.spokespersonName = Spokesperson
+
+member.campaign.milestone.form.button.milestones = View Milestones
+member.campaign.button.spokesperson.create = Assign Campaign
+member.campaign.button.unassign = Unassign Campaign
+any.campaign.button.spokesperson = View Spokesperson

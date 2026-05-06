@@ -9,3 +9,7 @@
     <acme:list-column code="member.campaign.list.label.startMoment" path="startMoment" width="20%" />
     <acme:list-column code="member.campaign.list.label.endMoment" path="endMoment" width="20%" />
 </acme:list>
+
+<jstl:if test="${isSpokesperson && draftMode}">
+     <acme:button code="member.campaign.button.spokesperson.create" action="/spokesperson/campaign-assignment/create?projectId=${projectId}"/>
+</jstl:if>

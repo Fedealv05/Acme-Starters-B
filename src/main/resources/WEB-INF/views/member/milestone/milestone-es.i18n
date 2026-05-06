@@ -1,0 +1,17 @@
+#Milestone Form #######################################################
+
+member.campaign.milestone.form.label.title = Título
+member.campaign.milestone.form.label.kind = Tipo
+member.campaign.milestone.form.label.achievements = Logros
+member.campaign.milestone.form.label.effort = Esfuerzo
+
+member.milestone.form.title = Hito
+
+#Milestone List #######################################################
+
+member.campaign.milestone.list.label.title = Título
+member.campaign.milestone.list.label.kind = Tipo
+member.campaign.milestone.list.label.effort = Esfuerzo
+
+
+member.milestone.list.title = Hitos

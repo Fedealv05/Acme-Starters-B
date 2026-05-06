@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
+import acme.entities.projects.Project;
 import acme.entities.strategy.Strategy;
+import acme.features.member.project.MemberProjectRepository;
+import acme.realms.Fundraiser;
 import acme.realms.Member;
 
 @Service
@@ -15,15 +18,20 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 
 	@Autowired
 	private MemberStrategyRepository	repository;
+	@Autowired
+	private MemberProjectRepository		projectRepository;
 
 	private List<Strategy>				strategies;
-	private int							projectId;
+	private Project						project;
 
 
 	@Override
 	public void load() {
-		this.projectId = super.getRequest().getData("projectId", int.class);
-		this.strategies = this.repository.findStrategiesByProjectId(this.projectId);
+		int id;
+		id = super.getRequest().getData("projectId", int.class);
+		this.project = this.projectRepository.findProjectById(id);
+		this.strategies = this.repository.findStrategiesByProjectId(this.project.getId());
+
 	}
 
 	@Override
@@ -31,7 +39,7 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.projectId, memberId) != null;
+		status = this.repository.findProjectMember(this.project.getId(), memberId) != null;
 
 		super.setAuthorised(status);
 	}
@@ -39,6 +47,12 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.strategies, "ticker", "name", "startMoment", "endMoment", "draftMode");
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+		boolean isFundraiser = super.getRequest().getPrincipal().getRealms().stream().anyMatch(Fundraiser.class::isInstance);
+		if (super.getRequest().hasData("projectId")) {
+			super.unbindGlobal("isFundraiser", isFundraiser);
+			super.unbindGlobal("projectId", this.project.getId());
+		}
 	}
 
 }
