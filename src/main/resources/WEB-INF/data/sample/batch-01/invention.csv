@@ -24,5 +24,5 @@ invention-019,WX34-0_a_B_,Base Invention Name,This is a standard base descriptio
 invention-020,OP12-zzzzzzzzzz,Base Invention Name,This is a standard base description for testing.,2027/01/01 10:00,2027/12/31 10:00,http://example.com/base,true,inventor-02,
 invention-021,QR34-0123456789,Base Invention Name,This is a standard base description for testing.,2027/01/01 10:00,2027/12/31 10:00,http://example.com/base,true,inventor-02,project-011
 invention-026,ST56-__________,Base Invention Name,This is a standard base description for testing.,2025/01/01 00:00,2027/12/31 10:00,http://example.com/base,true,inventor-02,
-invention-027,UV78-aB_12cdE3f,Base Invention Name,This is a standard base description for testing.,2027/01/01 10:00,2200/12/31 23:59,http://example.com/base,false,inventor-02,project-021
+invention-027,UV78-aB_12cdE3f,Base Invention Name,This is a standard base description for testing.,2027/01/01 10:00,2200/12/31 23:59,http://example.com/base,true,inventor-02,
 invention-030,WX90-Z_9_a_B_c_,Probar Publicacion,This is a standard base description for testing.,2027/01/01 10:00,2200/12/31 23:59,http://example.com/base,false,inventor-01,project-022
