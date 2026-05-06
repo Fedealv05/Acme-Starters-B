@@ -5,7 +5,7 @@
 
 <acme:form>
 <acme:form-textbox code="manager.part.form.label.name" path="name" readonly="true"/>
-<acme:form-textbox code="manager.part.form.label.kind" path="kind" readonly="true""/>
+<acme:form-textbox code="manager.part.form.label.kind" path="kind" readonly="true"/>
 <acme:form-textarea code="manager.part.form.label.description" path="description" readonly="true"/>
 <acme:form-money code="manager.part.form.label.cost" path="cost" readonly="true"/>
 
