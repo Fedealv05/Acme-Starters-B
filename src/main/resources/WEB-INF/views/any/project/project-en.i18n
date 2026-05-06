@@ -37,4 +37,6 @@ any.inventor.form.button.list = Inventors
 any.fundraiser.form.button.list = Fundraisers
 any.spokesperson.form.button.list  = Spokespersons    
 
+any.project.form.label.manager = Manager
+
 
