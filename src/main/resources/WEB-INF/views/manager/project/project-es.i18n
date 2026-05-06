@@ -32,6 +32,7 @@ manager.project.form.button.create= Crear
 
 acme.validation.project.timeInterval.message = La fecha de fin debe ser posterior a la fecha de inicio
 acme.validation.project.draftMode.message = El proyecto debe tener al menos una invención para ser publicado
+project.publish.validation.hasAtLeastOneInvention = El proyecto debe tener al menos una invención para ser publicado
 
 manager.inventor.form.button.list = Inventores
 manager.fundraiser.form.button.list = Recaudadores

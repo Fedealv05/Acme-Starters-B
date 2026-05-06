@@ -18,3 +18,5 @@ manager.inventor.list.label.username = username
 
 manager.inventor.list.button.addMember= Add Inventor
 manager.inventor.list.button.deleteMember = Delete Inventor
+
+manager.inventor.form.label.userAccount.username= Username

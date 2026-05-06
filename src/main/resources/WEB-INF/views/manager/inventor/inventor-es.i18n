@@ -22,3 +22,5 @@ manager.inventor.list.label.username=  Nombre de usuario
 
 manager.inventor.list.button.addMember= Añadir Inventor
 manager.inventor.list.button.deleteMember = Eliminar Inventor
+
+manager.inventor.form.label.userAccount.username= Nombre de usuario
