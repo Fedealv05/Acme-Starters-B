@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.campaigns.Campaign;
+import acme.entities.projects.Project;
+import acme.features.member.project.MemberProjectRepository;
 import acme.realms.Member;
+import acme.realms.Spokesperson;
 
 @Service
 public class MemberCampaignListService extends AbstractService<Member, Campaign> {
@@ -16,14 +19,19 @@ public class MemberCampaignListService extends AbstractService<Member, Campaign>
 	@Autowired
 	private MemberCampaignRepository	repository;
 
+	@Autowired
+	private MemberProjectRepository		projectRepository;
 	private List<Campaign>				campaigns;
-	private int							projectId;
+	private Project						project;
 
 
 	@Override
 	public void load() {
-		this.projectId = super.getRequest().getData("projectId", int.class);
-		this.campaigns = this.repository.findCampaignsByProjectId(this.projectId);
+		int id;
+		id = super.getRequest().getData("projectId", int.class);
+		this.project = this.projectRepository.findProjectById(id);
+		this.campaigns = this.repository.findCampaignsByProjectId(this.project.getId());
+
 	}
 
 	@Override
@@ -31,7 +39,7 @@ public class MemberCampaignListService extends AbstractService<Member, Campaign>
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.projectId, memberId) != null;
+		status = this.repository.findProjectMember(this.project.getId(), memberId) != null;
 
 		super.setAuthorised(status);
 	}
@@ -39,6 +47,13 @@ public class MemberCampaignListService extends AbstractService<Member, Campaign>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.campaigns, "ticker", "name", "startMoment", "endMoment", "draftMode");
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+		boolean isSpokesperson = super.getRequest().getPrincipal().getRealms().stream().anyMatch(Spokesperson.class::isInstance);
+		if (super.getRequest().hasData("projectId")) {
+			super.unbindGlobal("isSpokesperson", isSpokesperson);
+			super.unbindGlobal("projectId", this.project.getId());
+		}
+
 	}
 
 }

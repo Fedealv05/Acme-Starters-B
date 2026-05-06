@@ -37,6 +37,11 @@ public class MemberInventionShowService extends AbstractService<Member, Inventio
 	public void unbind() {
 		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 		super.unbindGlobal("inventorName", this.invention.getInventor().getUserAccount().getIdentity().getFullName());
+		super.unbindGlobal("draftMode", this.invention.getDraftMode());
+		super.unbindGlobal("id", this.invention.getId());
+		super.unbindGlobal("inventorId", this.invention.getInventor().getId());
+		if (this.invention.getProject() != null && this.invention.getInventor().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId())
+			super.unbindGlobal("projectId", this.invention.getProject().getId());
 	}
 
 }

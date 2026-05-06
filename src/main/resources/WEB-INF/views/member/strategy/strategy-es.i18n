@@ -13,4 +13,8 @@ member.strategy.form.label.description = Descripción
 member.strategy.form.label.moreInfo = Más Información
 member.strategy.form.label.startMoment = Momento de inicio
 member.strategy.form.label.endMoment = Momento de fin
-member.strategy.form.label.fundraiserName = Recaudador
+
+member.strategy.form.button.tactics = Ver Tácticas
+member.project.button.fundraiser.create = Asignar Estrategia
+any.strategy.form.label.fundraiser = Ver Recaudador
+member.strategy.button.unassign = Desasignar Estrategia

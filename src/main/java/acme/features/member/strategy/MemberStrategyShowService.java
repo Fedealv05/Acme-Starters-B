@@ -37,6 +37,10 @@ public class MemberStrategyShowService extends AbstractService<Member, Strategy>
 	public void unbind() {
 		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
 		super.unbindGlobal("fundraiserName", this.strategy.getFundraiser().getUserAccount().getIdentity().getFullName());
+		super.unbindGlobal("id", this.strategy.getId());
+		super.unbindGlobal("fundraiserId", this.strategy.getFundraiser().getId());
+		if (this.strategy.getProject() != null && this.strategy.getFundraiser().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId())
+			super.unbindGlobal("projectId", this.strategy.getProject().getId());
 	}
 
 }

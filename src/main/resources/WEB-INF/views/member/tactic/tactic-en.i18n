@@ -1,0 +1,16 @@
+#Tactic Form #######################################################
+
+member.tactic.form.label.name = Name
+member.tactic.form.label.kind = Kind
+member.tactic.form.label.notes= Notes
+member.tactic.form.label.expectedPercentage = Expected Percentage
+
+member.tactic.form.title = Tactic
+
+#Tactic List #######################################################
+
+member.tactic.list.label.name = Name
+member.tactic.list.label.kind = Kind
+member.tactic.list.label.expectedPercentage = Expected Percentage
+
+member.tactic.list.title = Tactics

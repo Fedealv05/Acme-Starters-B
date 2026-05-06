@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.inventions.Invention;
+import acme.entities.projects.Project;
+import acme.features.member.project.MemberProjectRepository;
+import acme.realms.Inventor;
 import acme.realms.Member;
 
 @Service
@@ -15,16 +18,19 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 
 	@Autowired
 	private MemberInventionRepository	repository;
-
+	@Autowired
+	private MemberProjectRepository		projectRepository;
 	private List<Invention>				inventions;
-	private int							projectId;
+	private Project						project;
 
 
 	@Override
 	public void load() {
-		this.projectId = super.getRequest().getData("projectId", int.class);
+		int id;
+		id = super.getRequest().getData("projectId", int.class);
+		this.project = this.projectRepository.findProjectById(id);
+		this.inventions = this.repository.findInventionsByProjectId(this.project.getId());
 
-		this.inventions = this.repository.findInventionsByProjectId(this.projectId);
 	}
 
 	@Override
@@ -32,7 +38,7 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.projectId, memberId) != null;
+		status = this.repository.findProjectMember(this.project.getId(), memberId) != null;
 
 		super.setAuthorised(status);
 	}
@@ -40,6 +46,13 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.inventions, "ticker", "name", "startMoment", "endMoment", "draftMode");
+		super.unbindGlobal("projectId", this.project.getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+		boolean isInventor = super.getRequest().getPrincipal().getRealms().stream().anyMatch(Inventor.class::isInstance);
+		if (super.getRequest().hasData("projectId")) {
+			super.unbindGlobal("isInventor", isInventor);
+			super.unbindGlobal("projectId", this.project.getId());
+		}
 	}
 
 }
