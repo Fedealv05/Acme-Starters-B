@@ -76,7 +76,7 @@ public class SpokespersonCampaignAssignmentCreateService extends AbstractService
 		SelectChoices choices;
 		choices = SelectChoices.from(this.campaigns, "ticker", null);
 		super.unbindObject(this.campaignAssignment, "campaignId");
-		super.unbindGlobal("listaCampaigns ", choices);
+		super.unbindGlobal("listaCampaigns", choices);
 		super.unbindGlobal("projectId", this.project.getId());
 	}
 
