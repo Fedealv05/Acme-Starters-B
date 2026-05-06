@@ -16,4 +16,7 @@ public interface AnyCampaignRepository extends AbstractRepository {
 
 	@Query("select i from Campaign i where i.id = :id")
 	Campaign findCampaignById(int id);
+
+	List<Campaign> findByProjectId(int projectId);
+
 }

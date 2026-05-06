@@ -58,7 +58,7 @@ public class ManagerProjectMemberDeleteService extends AbstractService<Manager, 
 	public void authorise() {
 		String roleName = super.getRequest().getData("role", String.class);
 		boolean validRole = "INVENTOR".equals(roleName) || "FUNDRAISER".equals(roleName) || "SPOKESPERSON".equals(roleName);
-		Boolean status = this.project != null && this.project.getManager().getId() == super.getRequest().getPrincipal().getActiveRealm().getId() && validRole;
+		Boolean status = this.project != null && this.project.getManager().getId() == super.getRequest().getPrincipal().getActiveRealm().getId() && validRole && this.project.getDraftMode();
 		super.setAuthorised(status);
 
 	}

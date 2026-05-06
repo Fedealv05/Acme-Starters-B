@@ -1,0 +1,40 @@
+#Project List #######################################################
+any.project.list.title = Projects
+
+any.project.list.label.title= Title
+any.project.list.label.keyWords = Keywords
+any.project.list.label.kickOff= Kick-Off
+any.project.list.label.closeOut= Closeout
+
+any.project.list.button.create= Create
+
+
+
+#Project Form #######################################################
+
+any.project.form.title = Project Form
+
+any.project.form.label.title = Title
+any.project.form.label.keyWords= Keywords
+any.project.form.label.description= Description
+any.project.form.label.kickOff = Kick-Off
+any.project..form.label.closeOut = Closeout
+any.invention.form.label.effort = Effort
+
+any.project.form.button.inventions = Inventions
+any.project.form.button.campaigns = Campaigns
+any.project.form.button.strategies = Strategies
+
+any.project.form.button.update = Update
+any.project.form.button.delete = Delete
+any.project.form.button.publish = Publish
+any.project.form.button.create= Create
+
+acme.validation.project.timeInterval.message = The Closeout date must be after the Kick-Off date
+acme.validation.project.draftMode.message = The project must have at least one invention to be 
+
+any.inventor.form.button.list = Inventors
+any.fundraiser.form.button.list = Fundraisers
+any.spokesperson.form.button.list  = Spokespersons    
+
+

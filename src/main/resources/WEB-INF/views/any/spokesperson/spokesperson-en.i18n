@@ -5,3 +5,10 @@ any.spokesperson.form.label.licensed= Licensed
 any.spokesperson.form.label.userAccount.username = Username
 
 any.spokesperson.form.title= Spokesperson
+
+
+any.spokesperson.list.label.username = Username
+any.spokesperson.list.label.cv = cv
+any.spokesperson.list.label.licensed = Licensed
+
+any.spokesperson.list.title = Spokespersons

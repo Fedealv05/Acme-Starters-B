@@ -10,7 +10,9 @@ import acme.client.services.AbstractService;
 import acme.entities.campaigns.Campaign;
 import acme.entities.inventions.Invention;
 import acme.entities.projects.Project;
+import acme.entities.projects.ProjectMember;
 import acme.entities.strategy.Strategy;
+import acme.features.manager.ProjectMember.ManagerProjectMemberRepository;
 import acme.features.manager.campaign.ManagerCampaignRepository;
 import acme.features.manager.invention.ManagerInventionRepository;
 import acme.features.manager.strategy.ManagerStrategyRepository;
@@ -20,18 +22,21 @@ import acme.realms.Manager;
 public class ManagerProjectDeleteService extends AbstractService<Manager, Project> {
 
 	@Autowired
-	private ManagerProjectRepository	repository;
+	private ManagerProjectRepository		repository;
 
 	@Autowired
-	private ManagerInventionRepository	inventionRepository;
+	private ManagerInventionRepository		inventionRepository;
 
 	@Autowired
-	private ManagerCampaignRepository	campaignRepository;
+	private ManagerCampaignRepository		campaignRepository;
 
 	@Autowired
-	private ManagerStrategyRepository	strategyRepository;
+	private ManagerStrategyRepository		strategyRepository;
 
-	private Project						project;
+	@Autowired
+	private ManagerProjectMemberRepository	projectMemberRepository;
+
+	private Project							project;
 
 
 	@Override
@@ -61,10 +66,10 @@ public class ManagerProjectDeleteService extends AbstractService<Manager, Projec
 	@Override
 	public void execute() {
 
-		//CUANDO ESTÉ PROJECTMEMBER HAY QUE CAMBIAR ESTE METODO PARA DESVINCULARLOS TAMBIÉN
 		List<Invention> inventions;
 		List<Campaign> campaigns;
 		List<Strategy> strategies;
+		List<ProjectMember> projectMembers;
 
 		int id;
 		id = super.getRequest().getData("id", int.class);
@@ -88,6 +93,12 @@ public class ManagerProjectDeleteService extends AbstractService<Manager, Projec
 		strategies.forEach(stra -> {
 			stra.setProject(null);
 			this.strategyRepository.save(stra);
+		});
+
+		projectMembers = this.projectMemberRepository.findByProjectId(id);
+
+		projectMembers.forEach(pm -> {
+			this.projectMemberRepository.delete(pm);
 		});
 
 		this.repository.delete(this.project);
