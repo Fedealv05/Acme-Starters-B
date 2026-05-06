@@ -21,7 +21,11 @@ public class AnySponsorshipListService extends AbstractService<Any, Sponsorship>
 
 	@Override
 	public void load() {
-		this.sponsorships = this.repository.findByDraftModeFalse();
+		if (super.getRequest().hasData("projectId")) {
+			int projectId = super.getRequest().getData("projectId", int.class);
+			this.sponsorships = this.repository.findByProjectId(projectId);
+		} else
+			this.sponsorships = this.repository.findByDraftModeFalse();
 	}
 
 	@Override
@@ -32,6 +36,10 @@ public class AnySponsorshipListService extends AbstractService<Any, Sponsorship>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.sponsorships, "ticker", "name", "startMoment", "endMoment");
+
+		int projectId = super.getRequest().getData("projectId", int.class);
+
+		super.unbindGlobal("projectId", projectId);
 	}
 
 }
