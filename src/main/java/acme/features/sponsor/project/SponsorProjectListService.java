@@ -1,7 +1,7 @@
 
 package acme.features.sponsor.project;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class SponsorProjectListService extends AbstractService<Sponsor, Project>
 	@Autowired
 	private SponsorProjectRepository	repository;
 
-	private Collection<Project>			projects;
+	private List<Project>				projects;
 
 
 	@Override

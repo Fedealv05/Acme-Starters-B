@@ -1,41 +1,157 @@
-# Sponsorship - List
-sponsor.sponsorship.list.label.ticker = Ticker
+# =========================
+# SPONSOR - CAMPAIGN
+# =========================
+sponsor.campaign.list.label.ticker = Ticker
+sponsor.campaign.list.label.name = Name
+sponsor.campaign.list.label.startMoment = Start moment
+sponsor.campaign.list.label.endMoment = End moment
+
+sponsor.campaign.form.label.ticker = Ticker
+sponsor.campaign.form.label.name = Name
+sponsor.campaign.form.label.description = Description
+sponsor.campaign.form.label.moreInfo = More information
+sponsor.campaign.form.label.startMoment = Start moment
+sponsor.campaign.form.label.endMoment = End moment
+sponsor.campaign.form.label.cost = Cost
+sponsor.campaign.form.label.monthsActive = Months active
+sponsor.campaign.form.label.milestones = Milestones
+
+# =========================
+# SPONSOR - INVENTION
+# =========================
+sponsor.invention.list.label.ticker = Ticker
+sponsor.invention.list.label.name = Name
+sponsor.invention.list.label.startMoment = Start moment
+sponsor.invention.list.label.endMoment = End moment
+
+sponsor.invention.form.label.ticker = Ticker
+sponsor.invention.form.label.name = Name
+sponsor.invention.form.label.description = Description
+sponsor.invention.form.label.moreInfo = More information
+sponsor.invention.form.label.startMoment = Start moment
+sponsor.invention.form.label.endMoment = End moment
+sponsor.invention.form.label.cost = Cost
+sponsor.invention.form.label.monthsActive = Months active
+sponsor.invention.form.label.parts = Parts
+
+# =========================
+# SPONSOR - STRATEGY
+# =========================
+sponsor.strategy.list.label.ticker = Ticker
+sponsor.strategy.list.label.name = Name
+sponsor.strategy.list.label.startMoment = Start moment
+sponsor.strategy.list.label.endMoment = End moment
+
+sponsor.strategy.form.label.ticker = Ticker
+sponsor.strategy.form.label.name = Name
+sponsor.strategy.form.label.description = Description
+sponsor.strategy.form.label.moreInfo = More information
+sponsor.strategy.form.label.startMoment = Start moment
+sponsor.strategy.form.label.endMoment = End moment
+sponsor.strategy.form.label.expectedPercentage = Expected percentage
+sponsor.strategy.form.label.monthsActive = Months active
+sponsor.strategy.form.label.tactics = Tactics
+
+# =========================
+# SPONSOR - PROJECT
+# =========================
+sponsor.project.list.title = Projects
+sponsor.project.list.label.title = Title
+sponsor.project.list.label.keyWords = Keywords
+sponsor.project.list.label.kickOff = Kick-off
+sponsor.project.list.label.closeOut = Close-out
+
+sponsor.project.form.title = Project details
+sponsor.project.form.label.title = Title
+sponsor.project.form.label.keyWords = Keywords
+sponsor.project.form.label.description = Description
+sponsor.project.form.label.kickOff = Kick-off
+sponsor.project.form.label.closeOut = Close-out
+sponsor.project.form.label.effort = Effort
+
+sponsor.project.form.button.inventions = Inventions
+sponsor.project.form.button.campaigns = Campaigns
+sponsor.project.form.button.strategies = Strategies
+sponsor.project.form.button.sponsorships = Sponsorships
+
+any.project.button.create = Create project
+any.project.button.sponsor.create = Assign sponsorship
+master.menu.projects.list = Projects
+
+# =========================
+# SPONSOR - SPONSORSHIP
+# =========================
+sponsor.sponsorship.list.title = Sponsorships
+sponsor.sponsorship.list.label.ticker = Identifier
 sponsor.sponsorship.list.label.name = Name
 sponsor.sponsorship.list.label.startMoment = Start moment
 sponsor.sponsorship.list.label.endMoment = End moment
-sponsor.sponsorship.list.label.draftMode = Draft mode?
-sponsor.sponsorship.list.button.create = Create sponsorship
 
-# Sponsorship - Form (Labels)
-sponsor.sponsorship.form.label.ticker = Ticker
+sponsor.sponsorship.form.title = Sponsorship details
+sponsor.sponsorship.form.label.ticker = Identifier
 sponsor.sponsorship.form.label.name = Name
 sponsor.sponsorship.form.label.description = Description
-sponsor.sponsorship.form.label.moreInfo = More info (URL)
+sponsor.sponsorship.form.label.moreInfo = More information
 sponsor.sponsorship.form.label.startMoment = Start moment
 sponsor.sponsorship.form.label.endMoment = End moment
 sponsor.sponsorship.form.label.totalMoney = Total money
 sponsor.sponsorship.form.label.monthsActive = Months active
 
-# Sponsorship - Form (Buttons)
-sponsor.sponsorship.form.button.donations = View donations
+sponsor.sponsorship.form.button.donations = Donations
 sponsor.sponsorship.form.button.update = Update
 sponsor.sponsorship.form.button.delete = Delete
 sponsor.sponsorship.form.button.publish = Publish
 sponsor.sponsorship.form.button.create = Create
 
-sponsor.sponsorship.list.title = Sponsorships
-sponsor.sponsorship.form.title = Sponsorship details
+sponsor.sponsorship.button.unassign = Unassign project
+sponsor.sponsorship-project.form.title = Assign sponsorship to project
 
+# =========================
+# SPONSORSHIP ASSIGNMENT
+# =========================
+sponsor.sponsorship-assignment.list = Available sponsorships
+sponsor.sponsorship-assignment.button.create = Assign project
+sponsor.sponsorship-assignment.error.sponsorshipId.required = You must select a sponsorship
+
+# =========================
+# DONATION
+# =========================
 sponsor.donation.list.title = Donations
-sponsor.donation.form.title = Donation details
-sponsor.donation.form.button.create = Create donation
-
-sponsor.donation.form.label.kind = Kind
-any.donation.list.label.kind = Kind
-
 sponsor.donation.list.button.create = Create donation
+
+sponsor.donation.form.title = Donation details
+sponsor.donation.form.label.kind = Kind
 sponsor.donation.form.button.update = Update donation
 sponsor.donation.form.button.delete = Delete donation
+sponsor.donation.form.button.create = Create donation
 
-acme.validation.header.message = Invalid string
-acme.validation.text.message = Invalid text
+# =========================
+# ANY - SPONSORSHIP
+# =========================
+any.sponsorship.list.label.ticker = Ticker
+any.sponsorship.list.label.name = Name
+any.sponsorship.list.label.startMoment = Start moment
+any.sponsorship.list.label.endMoment = End moment
+
+any.sponsorship.form.label.ticker = Ticker
+any.sponsorship.form.label.name = Name
+any.sponsorship.form.label.description = Description
+any.sponsorship.form.label.moreInfo = More information
+any.sponsorship.form.label.startMoment = Start moment
+any.sponsorship.form.label.endMoment = End moment
+any.sponsorship.form.label.totalMoney = Total money
+any.sponsorship.form.label.monthsActive = Months active
+any.sponsorship.form.label.donations = Donations
+any.sponsorship.form.label.sponsor = Sponsor
+
+# =========================
+# ANY - DONATION
+# =========================
+any.donation.list.label.name = Name
+any.donation.list.label.notes = Notes
+any.donation.list.label.money = Money
+any.donation.list.label.kind = Kind
+
+any.donation.form.label.name = Name
+any.donation.form.label.notes = Notes
+any.donation.form.label.money = Money

@@ -19,22 +19,18 @@ public class SponsorProjectShowService extends AbstractService<Sponsor, Project>
 
 	@Override
 	public void load() {
-
 		int id = super.getRequest().getData("id", int.class);
-		this.project = this.repository.findOneProjectById(id);
+		this.project = this.repository.findProjectById(id);
 	}
 
 	@Override
 	public void authorise() {
-		boolean status;
-
-		status = this.project != null && !this.project.getDraftMode();
+		boolean status = this.project != null && !this.project.getDraftMode();
 		super.setAuthorised(status);
 	}
 
 	@Override
 	public void unbind() {
-
-		super.unbindObject(this.project, "title", "keyWords", "description", "kickOff", "closeOut", "effort");
+		super.unbindObject(this.project, "title", "keyWords", "description", "kickOff", "closeOut", "draftMode", "effort");
 	}
 }

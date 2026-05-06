@@ -86,6 +86,11 @@ public class Sponsorship extends AbstractEntity {
 	@ManyToOne(optional = true)
 	private Project				project;
 
+	@Optional
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Column
+	private Date				projectUnassignMoment;
+
 	// Derived attributes (Methods) -------------------------------------------
 
 

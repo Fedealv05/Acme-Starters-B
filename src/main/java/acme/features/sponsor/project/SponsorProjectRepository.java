@@ -1,7 +1,6 @@
-
 package acme.features.sponsor.project;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -13,9 +12,8 @@ import acme.entities.projects.Project;
 public interface SponsorProjectRepository extends AbstractRepository {
 
 	@Query("select p from Project p where p.draftMode = false")
-	Collection<Project> findPublishedProjects();
+	List<Project> findPublishedProjects();
 
 	@Query("select p from Project p where p.id = :id")
-	Project findOneProjectById(int id);
-
+	Project findProjectById(int id);
 }

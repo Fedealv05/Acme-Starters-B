@@ -11,5 +11,10 @@
     <acme:list-column code="any.sponsorship.list.label.name" path="name" width="20%" />
     <acme:list-column code="any.sponsorship.list.label.startMoment" path="startMoment" width="20%" />
 	<acme:list-column code="any.sponsorship.list.label.endMoment" path="endMoment" width="20%" />
+	
 
 </acme:list>
+
+	
+     <acme:button code="any.project.button.sponsor.create" action="/sponsor/sponsorship-project/create?projectId=${projectId}"/>
+  
