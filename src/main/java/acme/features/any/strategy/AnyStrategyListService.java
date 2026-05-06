@@ -21,12 +21,19 @@ public class AnyStrategyListService extends AbstractService<Any, Strategy> {
 
 	@Override
 	public void load() {
-		this.strategies = this.repository.findByDraftModeFalse();
+		if (super.getRequest().hasData("projectId"))
+			this.strategies = this.repository.findByProjectId(this.getRequest().getData("projectId", Integer.class));
+
+		else
+			this.strategies = this.repository.findByDraftModeFalse();
 	}
 
 	@Override
 	public void authorise() {
-		boolean status = true;
+		boolean todosPublicados = true;
+		if (super.getRequest().hasData("projectId"))
+			todosPublicados = this.strategies.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+		boolean status = this.strategies != null && todosPublicados;
 		super.setAuthorised(status);
 	}
 

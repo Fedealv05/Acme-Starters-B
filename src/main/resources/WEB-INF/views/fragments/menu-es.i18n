@@ -14,6 +14,8 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
 master.menu.any = Cualquiera
+master.menu.project.list = Proyectos
+
 
 
 # master.menu.administrator ###################################################

@@ -1,5 +1,5 @@
 
-package acme.features.any.inventor;
+package acme.features.any.project;
 
 import javax.annotation.PostConstruct;
 
@@ -8,17 +8,17 @@ import org.springframework.stereotype.Controller;
 
 import acme.client.components.principals.Any;
 import acme.client.controllers.AbstractController;
-import acme.realms.Inventor;
+import acme.entities.projects.Project;
 
 @Controller
-public class AnyInventorController extends AbstractController<Any, Inventor> {
+public class AnyProjectController extends AbstractController<Any, Project> {
 
 	@PostConstruct
 	protected void initialise() {
 
 		super.setMediaType(MediaType.TEXT_HTML);
-		super.addBasicCommand("show", AnyInventorShowService.class);
-		super.addBasicCommand("list", AnyInventorListService.class);
+		super.addBasicCommand("list", AnyProjectListService.class);
+		super.addBasicCommand("show", AnyProjectShowService.class);
 
 	}
 

@@ -22,12 +22,19 @@ public class AnyInventionListService extends AbstractService<Any, Invention> {
 	@Override
 	public void load() {
 
-		this.inventions = this.repository.findByDraftModeFalse();
+		if (super.getRequest().hasData("projectId"))
+			this.inventions = this.repository.findByProjectId(this.getRequest().getData("projectId", Integer.class));
+
+		else
+			this.inventions = this.repository.findByDraftModeFalse();
 	}
 
 	@Override
 	public void authorise() {
-		boolean status = true;
+		boolean todosPublicados = true;
+		if (super.getRequest().hasData("projectId"))
+			todosPublicados = this.inventions.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+		boolean status = this.inventions != null && todosPublicados;
 		super.setAuthorised(status);
 	}
 

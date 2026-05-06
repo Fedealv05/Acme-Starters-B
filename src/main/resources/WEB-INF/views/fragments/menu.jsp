@@ -40,6 +40,8 @@
 			<acme:menu-suboption code="master.menu.strategy" action="/any/strategy/list"/>
 			<acme:menu-suboption code="master.menu.sponsorship.list" action="/any/sponsorship/list"/>
 			<acme:menu-suboption code="master.menu.campaign.list" action="/any/campaign/list"/>
+			<acme:menu-suboption code="master.menu.project.list" action="/any/project/list"/>
+			
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
 			<acme:menu-suboption code="master.menu.strategy" action="/fundraiser/strategy/list"/>

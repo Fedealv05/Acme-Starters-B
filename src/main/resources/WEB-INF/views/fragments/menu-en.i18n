@@ -14,6 +14,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.any = Any
+master.menu.project.list = Projects
 
 # master.menu.administrator ###################################################
 
@@ -84,5 +85,7 @@ master.menu.authsponsorship.list = My sponsorships
 
 master.menu.manager= Manager
 master.menu.manager.project.list= My projects
+
+
 
 
