@@ -11,7 +11,7 @@ import acme.entities.projects.Project;
 import acme.realms.Member;
 
 @Service
-public class MemberListProjectService extends AbstractService<Member, Project> {
+public class MemberProjectListService extends AbstractService<Member, Project> {
 
 	@Autowired
 	private MemberProjectRepository	repository;

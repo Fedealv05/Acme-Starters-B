@@ -48,6 +48,7 @@
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.authsponsorship" access="hasRealm('Sponsor')">
 			<acme:menu-suboption code="master.menu.authsponsorship.list" action="/sponsor/sponsorship/list"/>
+			<acme:menu-suboption code="master.menu.projects.list" action="/sponsor/project/list"/>
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.inventor" access="hasRealm('Inventor')">
 			<acme:menu-suboption code="master.menu.inventor.invention.list" action="/inventor/invention/list"/>
