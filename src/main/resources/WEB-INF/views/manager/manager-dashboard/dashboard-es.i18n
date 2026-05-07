@@ -1,0 +1,9 @@
+master.menu.manager.dashboard.show = Tablero
+manager.manager-dashboard.form.title = Tablero
+
+manager.dashboard.totalProjects = Número total de proyectos
+manager.dashboard.devTotalProjects = Desviación estándar de proyectos
+manager.dashboard.minEffort = Esfuerzo mínimo de los proyectos
+manager.dashboard.maxEffort = Esfuerzo máximo de los proyectos
+manager.dashboard.avgEffort = Esfuerzo medio de los proyectos
+manager.dashboard.devEffort = Desviación estándar del esfuerzo de los proyectos
