@@ -1,0 +1,29 @@
+master.menu.auditor = Auditor
+master.menu.Project = Proyectos
+
+
+# Listado
+any.audit-report.list.title=Listado de Informes de Auditoría
+any.audit-report.list.label.ticker=Ticker
+any.audit-report.list.label.name=Nombre
+any.audit-report.list.label.startMoment=Fecha de Inicio
+any.audit-report.list.label.endMoment=Fecha de Fin
+any.project.button.auditor.create=Crear Auditor
+
+# Formulario de Proyecto
+auditor.audit-report-project.form.title=Gestión de Proyecto de Auditoría
+auditor.audit-report-assignment.list=Lista de Asignaciones
+auditor.audit-report-assignment.button.create=Asignar Auditor
+
+# Detalle del Informe
+any.audit-report.form.title=Detalle del Informe
+any.audit-report.form.label.ticker=Ticker
+any.audit-report.form.label.name=Nombre
+any.audit-report.form.label.description=Descripción
+any.audit-report.form.label.startMoment=Fecha/Hora Inicio
+any.audit-report.form.label.endMoment=Fecha/Hora Fin
+any.audit-report.form.label.moreInfo=Más Información (URL)
+any.audit-report.form.label.monthsActive=Meses Activos
+any.audit-report.form.label.hours=Horas
+any.audit-report.form.label.project=Proyecto
+auditor.audit-report.button.unassign=Desasignar

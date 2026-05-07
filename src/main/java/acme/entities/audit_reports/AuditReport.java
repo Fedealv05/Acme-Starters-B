@@ -26,6 +26,7 @@ import acme.constraints.ValidHeader;
 import acme.constraints.ValidText;
 import acme.constraints.ValidTicker;
 import acme.constraints.audit_reports.ValidAuditReport;
+import acme.entities.projects.Project;
 import acme.realms.Auditor;
 import lombok.Getter;
 import lombok.Setter;
@@ -76,6 +77,15 @@ public class AuditReport extends AbstractEntity {
 	@Valid
 	@Column
 	private Boolean					draftMode;
+
+	@Valid
+	@ManyToOne(optional = true)
+	private Project					project;
+
+	@Optional
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Column
+	private Date					projectUnassignMoment;
 
 	// Derived attributes -----------------------------------------------------
 

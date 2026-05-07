@@ -1,0 +1,26 @@
+auditor.project.list.title = Project list
+auditor.project.form.title = Project details
+
+auditor.project.list.label.title = Title
+auditor.project.list.label.keyWords = Key Words
+auditor.project.list.label.kickOffMoment = KickOff Moment
+auditor.project.list.label.closeOutMoment = CloseOut Moment
+
+auditor.project.form.label.title = Title
+auditor.project.form.label.keyWords = Key Words
+auditor.project.form.label.kickOffMoment = KickOff Moment
+auditor.project.form.label.closeOutMoment = CloseOut Moment
+auditor.project.form.label.description = Description
+auditor.project.form.label.effort = Effort
+auditor.project.button.manager = Manager
+auditor.project.button.inventor= Inventors
+auditor.project.button.spokesperson= Spokespeople
+auditor.project.button.fundraiser= Fundraisers
+auditor.project.button.invention= Inventions
+auditor.project.button.strategy= Strategies
+auditor.project.button.campaign= Campaigns
+auditor.project.button.sponsorship = Sponsorships
+auditor.project.button.audit-report = Audit Reports
+
+auditor.project.label.roles= Associated Roles
+auditor.project.label.elements = Project Elements

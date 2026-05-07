@@ -36,3 +36,5 @@ acme.validation.project.draftMode.message = El proyecto debe tener al menos una 
 any.inventor.form.button.list = Inventores
 any.fundraiser.form.button.list = Recaudadores
 any.spokesperson.form.button.list  = Portavoces 
+any.project.form.label.manager = Manager
+
