@@ -36,8 +36,8 @@ public class ManagerPartListService extends AbstractService<Manager, Part> {
 
 		this.parts = this.repository.findByInventionId(id);
 		this.invention = this.inventionRepository.findInventionById(id);
-
-		this.project = this.invention.getProject();
+		if (this.invention != null)
+			this.project = this.invention.getProject();
 	}
 
 	@Override

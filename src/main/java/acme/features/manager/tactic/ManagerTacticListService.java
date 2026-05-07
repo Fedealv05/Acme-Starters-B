@@ -36,8 +36,8 @@ public class ManagerTacticListService extends AbstractService<Manager, Tactic> {
 
 		this.tactics = this.repository.findByStrategyId(id);
 		this.strategy = this.strategyRepository.findStrategyById(id);
-
-		this.project = this.strategy.getProject();
+		if (this.strategy != null)
+			this.project = this.strategy.getProject();
 	}
 
 	@Override
