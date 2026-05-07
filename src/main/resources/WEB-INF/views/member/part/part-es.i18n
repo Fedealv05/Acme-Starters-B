@@ -1,0 +1,16 @@
+#Milestone Form #######################################################
+
+member.part.form.label.name = Nombre
+member.part.form.label.kind = Tipo
+member.part.form.label.description= Descripción
+member.part.form.label.cost = Coste
+
+member.part.form.title = Parte
+
+#Milestone List #######################################################
+
+member.part.list.label.name = Nombre
+member.part.list.label.kind = Tipo
+member.part.list.label.cost = Coste
+
+member.part.list.title = Partes

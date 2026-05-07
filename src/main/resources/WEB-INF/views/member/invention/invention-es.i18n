@@ -13,4 +13,8 @@ member.invention.form.label.description = Descripción
 member.invention.form.label.moreInfo = Más Información
 member.invention.form.label.startMoment = Momento de inicio
 member.invention.form.label.endMoment = Momento de fin
-member.invention.form.label.inventorName = Inventor
+
+member.invention.form.button.parts = Ver partes
+member.project.button.inventor.create = Asignar Invención
+any.invention.button.inventor = Ver Inventor
+member.invention.button.unassign = Desasignar Invención

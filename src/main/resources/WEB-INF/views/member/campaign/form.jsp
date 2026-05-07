@@ -11,5 +11,11 @@
     <acme:form-moment code="member.campaign.form.label.startMoment" path="startMoment" readonly="true"/>
     <acme:form-moment code="member.campaign.form.label.endMoment" path="endMoment" readonly="true"/>
     
-    <acme:form-textbox code="member.campaign.form.label.spokespersonName" path="spokespersonName" readonly="true"/>
+    
+    <acme:button code="member.campaign.milestone.form.button.milestones" action="/member/milestone/list?campaignId=${id}"/>
+    <acme:button code="any.campaign.button.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
+    
+    <jstl:if test="${projectId != null}">
+		<acme:submit code="member.campaign.button.unassign" action="/spokesperson/campaign/unassign?campaignId=${id}"/>
+	 </jstl:if>
 </acme:form>

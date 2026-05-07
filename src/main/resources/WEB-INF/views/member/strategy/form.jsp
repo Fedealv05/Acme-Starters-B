@@ -11,5 +11,11 @@
     <acme:form-moment code="member.strategy.form.label.startMoment" path="startMoment" readonly="true"/>
     <acme:form-moment code="member.strategy.form.label.endMoment" path="endMoment" readonly="true"/>
     
-    <acme:form-textbox code="member.strategy.form.label.fundraiserName" path="fundraiserName" readonly="true"/>
+    
+    <acme:button code="member.strategy.form.button.tactics" action="/member/tactic/list?strategyId=${id}"/>
+    <acme:button code="any.strategy.form.label.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
+    
+     <jstl:if test="${projectId != null}">
+		<acme:submit code="member.strategy.button.unassign" action="/fundraiser/strategy/unassign?strategyId=${id}"/>
+	</jstl:if>  
 </acme:form>
