@@ -10,3 +10,7 @@ administrator.banner.list.title = Banners
 administrator.banner.list.label.slogan = Slogan
 administrator.banner.list.label.target = Target URL
 administrator.banner.list.button.create = Create
+
+administrator.advertisement.form.title = Banner Form
+
+administrator.advertisement.list.title = Banners
