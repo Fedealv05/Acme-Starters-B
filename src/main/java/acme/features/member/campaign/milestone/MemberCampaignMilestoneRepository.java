@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import acme.client.repositories.AbstractRepository;
 import acme.entities.campaigns.Campaign;
 import acme.entities.campaigns.Milestone;
+import acme.entities.projects.Project;
 import acme.entities.projects.ProjectMember;
 
 @Repository
@@ -24,4 +25,7 @@ public interface MemberCampaignMilestoneRepository extends AbstractRepository {
 
 	@Query("select c from Campaign c where c.id = :id")
 	Campaign findCampaignById(int id);
+
+	@Query("select p from Project p where p.id = :id")
+	Project findProjectById(int id);
 }

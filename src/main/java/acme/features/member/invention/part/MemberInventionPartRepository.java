@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import acme.client.repositories.AbstractRepository;
 import acme.entities.inventions.Invention;
 import acme.entities.inventions.Part;
+import acme.entities.projects.Project;
 import acme.entities.projects.ProjectMember;
 
 @Repository
@@ -24,5 +25,8 @@ public interface MemberInventionPartRepository extends AbstractRepository {
 
 	@Query("select p from Part p where p.id = :id")
 	Part findPartById(int id);
+
+	@Query("select p from Project p where p.id = :id")
+	Project findProjectById(int id);
 
 }

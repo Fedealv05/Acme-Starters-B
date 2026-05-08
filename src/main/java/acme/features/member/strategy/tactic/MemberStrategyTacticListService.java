@@ -25,7 +25,8 @@ public class MemberStrategyTacticListService extends AbstractService<Member, Tac
 	public void load() {
 		this.strategyId = super.getRequest().getData("strategyId", int.class);
 		this.tactics = this.repository.findByStrategyId(this.strategyId);
-		this.projectId = this.repository.findStrategyById(this.strategyId).getProject().getId();
+		if (this.repository.findStrategyById(this.strategyId) != null)
+			this.projectId = this.repository.findStrategyById(this.strategyId).getProject().getId();
 	}
 
 	@Override
@@ -33,7 +34,7 @@ public class MemberStrategyTacticListService extends AbstractService<Member, Tac
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.projectId, memberId) != null;
+		status = this.repository.findProjectById(this.projectId) != null && this.repository.findProjectMember(this.projectId, memberId) != null;
 
 		super.setAuthorised(status);
 	}
