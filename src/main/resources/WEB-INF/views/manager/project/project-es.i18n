@@ -37,3 +37,6 @@ project.publish.validation.hasAtLeastOneInvention = El proyecto debe tener al me
 manager.inventor.form.button.list = Inventores
 manager.fundraiser.form.button.list = Recaudadores
 manager.spokesperson.form.button.list  = Portavoces 
+
+any.project.form.button.auditReport = Reporte de auditoría
+any.project.form.button.sponsorship = Patrocinio

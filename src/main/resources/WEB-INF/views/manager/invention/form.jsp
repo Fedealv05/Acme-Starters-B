@@ -14,5 +14,7 @@
 <acme:form-textbox code="manager.invention.form.label.monthsActive" path="monthsActive" readonly="true"/>
 
 <acme:button code="manager.invention.form.label.parts" action="/manager/part/list?inventionId=${id}"  />
+<acme:button code="any.campaign.form.label.inventor" action="/any/inventor/show?id=${inventorId}"/>
+
 
 </acme:form>

@@ -15,6 +15,9 @@
         <acme:button code="any.project.form.button.inventions" action="/any/invention/list?projectId=${id}"/>
         <acme:button code="any.project.form.button.campaigns" action="/any/campaign/list?projectId=${id}"/>
         <acme:button code="any.project.form.button.strategies" action="/any/strategy/list?projectId=${id}"/>
+        <acme:button code="any.project.form.button.auditReport" action="/any/audit-report/list?projectId=${id}"/>
+         <acme:button code="any.project.form.button.sponsorship" action="/any/sponsorship/list?projectId=${id}"/>
+    
         <acme:button code="any.inventor.form.button.list" action="/any/inventor/list?projectId=${id}"/>
         <acme:button code="any.fundraiser.form.button.list" action="/any/fundraiser/list?projectId=${id}"/>
         <acme:button code="any.spokesperson.form.button.list" action="/any/spokesperson/list?projectId=${id}"/>

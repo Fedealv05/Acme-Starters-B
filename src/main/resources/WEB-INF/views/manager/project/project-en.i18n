@@ -39,4 +39,7 @@ manager.inventor.form.button.list = Inventors
 manager.fundraiser.form.button.list = Fundraisers
 manager.spokesperson.form.button.list  = Spokespersons    
 
+any.project.form.button.auditReport = Audit Reports
+any.project.form.button.sponsorship = Sponsorships
+
 

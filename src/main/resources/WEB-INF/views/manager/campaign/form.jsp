@@ -14,5 +14,6 @@
 <acme:form-textbox code="manager.campaign.form.label.monthsActive" path="monthsActive" readonly="true"/>
 
 <acme:button code="manager.campaign.form.label.milestones" action="/manager/milestone/list?campaignId=${id}"  />
+<acme:button code="any.campaign.form.label.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
 
 </acme:form>

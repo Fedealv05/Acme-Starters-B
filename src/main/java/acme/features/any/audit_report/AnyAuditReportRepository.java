@@ -2,6 +2,7 @@
 package acme.features.any.audit_report;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -21,4 +22,5 @@ public interface AnyAuditReportRepository extends AbstractRepository {
 	@Query("select a from AuditReport a where a.project.id = :projectId")
 	Collection<AuditReport> findAllAuditReportsByProjectId(Integer projectId);
 
+	List<AuditReport> findByDraftModeFalse();
 }
