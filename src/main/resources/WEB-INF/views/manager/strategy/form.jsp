@@ -14,5 +14,6 @@
 <acme:form-textbox code="manager.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
 
 <acme:button code="manager.strategy.form.label.tactics" action="/manager/tactic/list?strategyId=${id}"  />
+<acme:button code="any.campaign.form.label.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 
 </acme:form>
