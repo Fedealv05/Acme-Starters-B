@@ -1,5 +1,5 @@
 
-package acme.features.sponsor.sponsorshipProject;
+package acme.features.sponsor.sponsorship_project;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

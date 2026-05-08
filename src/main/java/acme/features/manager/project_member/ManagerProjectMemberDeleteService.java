@@ -1,5 +1,5 @@
 
-package acme.features.manager.ProjectMember;
+package acme.features.manager.project_member;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import acme.realms.Member;
 import acme.realms.Spokesperson;
 
 @Service
-public class ManagerProjectMemberCreateService extends AbstractService<Manager, ProjectMember> {
+public class ManagerProjectMemberDeleteService extends AbstractService<Manager, ProjectMember> {
 
 	@Autowired
 	private ManagerProjectMemberRepository	repository;
@@ -37,8 +37,6 @@ public class ManagerProjectMemberCreateService extends AbstractService<Manager, 
 	private ManagerSpokespersonRepository	spokespersonRepository;
 
 	private ProjectMember					projectMember;
-
-	private Member							member;
 
 	private Project							project;
 
@@ -60,6 +58,7 @@ public class ManagerProjectMemberCreateService extends AbstractService<Manager, 
 		boolean validRole = "INVENTOR".equals(roleName) || "FUNDRAISER".equals(roleName) || "SPOKESPERSON".equals(roleName);
 		Boolean status = this.project != null && this.project.getManager().getId() == super.getRequest().getPrincipal().getActiveRealm().getId() && validRole && this.project.getDraftMode();
 		super.setAuthorised(status);
+
 	}
 
 	@Override
@@ -73,38 +72,46 @@ public class ManagerProjectMemberCreateService extends AbstractService<Manager, 
 
 		if ("INVENTOR".equals(roleName)) {
 			Inventor inventor = this.inventorRepository.findInventorById(selectedRoleId);
-			userAccount = inventor.getUserAccount();
+			if (inventor != null)
+				userAccount = inventor.getUserAccount();
 		} else if ("FUNDRAISER".equals(roleName)) {
 			Fundraiser fundraiser = this.fundraiserRepository.findFundraiserById(selectedRoleId);
-			userAccount = fundraiser.getUserAccount();
+			if (fundraiser != null)
+				userAccount = fundraiser.getUserAccount();
 		} else if ("SPOKESPERSON".equals(roleName)) {
 			Spokesperson spokesperson = this.spokespersonRepository.findSpokespersonById(selectedRoleId);
-			userAccount = spokesperson.getUserAccount();
+			if (spokesperson != null)
+				userAccount = spokesperson.getUserAccount();
 		}
 
-		if (userAccount != null) {
-			Member member = this.repository.findMemberByUserAccountId(userAccount.getId());
-			if (member == null) {
-				member = new Member();
-				member.setUserAccount(userAccount);
-				this.repository.save(member);
-			}
-			this.projectMember.setMember(member);
-		}
+		if (userAccount == null)
+			return;
+
+		Member member = this.repository.findMemberByUserAccountId(userAccount.getId());
+
+		if (member == null)
+			return;
+
+		ProjectMember existingAssignment = this.repository.findProjectMemberByProjectIdAndMemberId(this.project.getId(), member.getId());
+
+		if (existingAssignment != null)
+			this.projectMember = existingAssignment;
+		else
+			this.projectMember.setMember(null);
 	}
 
 	@Override
 	public void validate() {
 		super.validateObject(this.projectMember);
 
-		if (this.projectMember.getMember() == null)
-			super.state(false, "selectedUser", "projectMember.create.validation.missingUser");
+		if (this.projectMember.getId() == 0 || this.projectMember.getMember() == null)
+			super.state(false, "selectedUser", "projectMember.delete.validation.missingUser");
 
 	}
 
 	@Override
 	public void execute() {
-		this.repository.save(this.projectMember);
+		this.repository.delete(this.projectMember);
 	}
 
 	@Override
@@ -117,13 +124,13 @@ public class ManagerProjectMemberCreateService extends AbstractService<Manager, 
 		String roleName = super.getRequest().getData("role", String.class);
 
 		if ("INVENTOR".equals(roleName)) {
-			List<Inventor> inventores = this.repository.findUnassignedInventors(projectId);
+			List<Inventor> inventores = this.repository.findAssignedInventors(projectId);
 			userChoices = SelectChoices.from(inventores, "userAccount.username", null);
 		} else if ("FUNDRAISER".equals(roleName)) {
-			List<Fundraiser> fundraisers = this.repository.findUnassignedFundraisers(projectId);
+			List<Fundraiser> fundraisers = this.repository.findAssignedFundraisers(projectId);
 			userChoices = SelectChoices.from(fundraisers, "userAccount.username", null);
 		} else if ("SPOKESPERSON".equals(roleName)) {
-			List<Spokesperson> spokespersons = this.repository.findUnassignedSpokespersons(projectId);
+			List<Spokesperson> spokespersons = this.repository.findAssignedSpokesperson(projectId);
 			userChoices = SelectChoices.from(spokespersons, "userAccount.username", null);
 		}
 

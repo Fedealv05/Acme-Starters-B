@@ -35,7 +35,7 @@ public class ProjectValidator extends AbstractValidator<ValidProject, Project> {
 
 			{
 				boolean publishedWithAtLeastOneInvention;
-				if (project.getDraftMode())
+				if (Boolean.TRUE.equals(project.getDraftMode()))
 					publishedWithAtLeastOneInvention = true;
 				else {
 					long count = this.inventionRepository.countByProjectId(project.getId());

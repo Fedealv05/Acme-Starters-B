@@ -61,7 +61,7 @@ public class InventorInventionPublishService extends AbstractService<Inventor, I
 
 		boolean hasAtLeastOnePart;
 		List<Part> parts = this.partRepository.findByInventionId(this.invention.getId());
-		hasAtLeastOnePart = parts.size() >= 1;
+		hasAtLeastOnePart = !parts.isEmpty();
 
 		super.state(hasAtLeastOnePart, "*", "invention.publish.validation.hasAtLeastOnePart");
 

@@ -1,5 +1,5 @@
 
-package acme.features.auditor.auditReportProject;
+package acme.features.auditor.audit_report_project;
 
 import javax.annotation.PostConstruct;
 

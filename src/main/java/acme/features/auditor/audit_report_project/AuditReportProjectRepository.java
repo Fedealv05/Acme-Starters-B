@@ -1,5 +1,5 @@
 
-package acme.features.auditor.auditReportProject;
+package acme.features.auditor.audit_report_project;
 
 import java.util.Collection;
 
@@ -19,13 +19,7 @@ public interface AuditReportProjectRepository extends AbstractRepository {
 	@Query("select s from AuditReport s where s.id = :id")
 	AuditReport findAuditReportById(int id);
 
-	@Query("""
-			select s
-			from AuditReport s
-			where s.auditor.id = :auditorId
-			and s.project is null
-			and s.draftMode = false
-		""")
+	@Query("select s from AuditReport s where s.auditor.id = :auditorId and s.project is null and s.draftMode = false")
 	Collection<AuditReport> findAvailableAuditReportsByAuditorId(int auditorId);
 
 }

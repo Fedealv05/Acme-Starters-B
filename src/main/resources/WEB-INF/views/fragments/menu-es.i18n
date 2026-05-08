@@ -91,3 +91,5 @@ master.menu.manager.project.list= Mis proyectos
 master.menu.member = Miembro
 master.menu.member.project.list = Proyectos
 
+master.menu.administrator.list-banners = Ver banners
+

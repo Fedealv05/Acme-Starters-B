@@ -1,3 +1,4 @@
+
 package acme.features.sponsor.campaign;
 
 import java.util.List;
@@ -13,4 +14,7 @@ public interface SponsorCampaignRepository extends AbstractRepository {
 
 	@Query("select c from Campaign c where c.project.id = :projectId")
 	List<Campaign> findCampaignsByProjectId(int projectId);
+
+	@Query("select p from Campaign p where p.id = :id")
+	Campaign findCampaigntById(int id);
 }

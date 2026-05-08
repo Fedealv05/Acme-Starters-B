@@ -60,7 +60,7 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 
 		boolean hasAtLeastOneMilestone;
 		List<Milestone> milestones = this.milestoneRepository.findByCampaignId(this.campaign.getId());
-		hasAtLeastOneMilestone = milestones.size() >= 1;
+		hasAtLeastOneMilestone = !milestones.isEmpty();
 
 		super.state(hasAtLeastOneMilestone, "*", "campaign.publish.validation.hasAtLeastOneMilestone");
 

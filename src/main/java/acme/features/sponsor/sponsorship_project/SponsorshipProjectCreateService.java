@@ -1,5 +1,5 @@
 
-package acme.features.sponsor.sponsorshipProject;
+package acme.features.sponsor.sponsorship_project;
 
 import java.time.temporal.ChronoUnit;
 import java.util.Collection;

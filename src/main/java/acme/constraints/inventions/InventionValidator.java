@@ -50,7 +50,7 @@ public class InventionValidator extends AbstractValidator<ValidInvention, Invent
 
 			{
 				boolean validParts;
-				if (invention.getDraftMode())
+				if (Boolean.TRUE.equals(invention.getDraftMode()))
 					validParts = true;
 				else {
 					long count = this.partRepository.countByInventionId(invention.getId());

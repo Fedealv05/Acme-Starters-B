@@ -20,7 +20,7 @@ public class SponsorCampaignShowService extends AbstractService<Sponsor, Campaig
 	@Override
 	public void load() {
 		int id = super.getRequest().getData("id", int.class);
-		this.campaign = (Campaign) this.repository.findById(id).get();
+		this.campaign = this.repository.findCampaigntById(id);
 	}
 
 	@Override

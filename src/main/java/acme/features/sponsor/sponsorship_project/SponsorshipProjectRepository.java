@@ -1,5 +1,5 @@
 
-package acme.features.sponsor.sponsorshipProject;
+package acme.features.sponsor.sponsorship_project;
 
 import java.util.Collection;
 
@@ -19,13 +19,7 @@ public interface SponsorshipProjectRepository extends AbstractRepository {
 	@Query("select s from Sponsorship s where s.id = :id")
 	Sponsorship findSponsorshipById(int id);
 
-	@Query("""
-			select s
-			from Sponsorship s
-			where s.sponsor.id = :sponsorId
-			and s.project is null
-			and s.draftMode = false
-		""")
+	@Query("select s from Sponsorship s where s.sponsor.id = :sponsorId and s.project is null and s.draftMode = false")
 	Collection<Sponsorship> findAvailableSponsorshipsBySponsorId(int sponsorId);
 
 }
