@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Banner extends AbstractEntity {
+public class Advertisement extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 

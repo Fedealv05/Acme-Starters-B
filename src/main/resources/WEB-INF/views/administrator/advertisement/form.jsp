@@ -11,11 +11,11 @@
 	
 	<jstl:choose>
 		<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish')}">
-			<acme:submit code="administrator.banner.form.button.update" action="/administrator/banner/update"/>
-			<acme:submit code="administrator.banner.form.button.delete" action="/administrator/banner/delete"/>
+			<acme:submit code="administrator.banner.form.button.update" action="/administrator/advertisement/update"/>
+			<acme:submit code="administrator.banner.form.button.delete" action="/administrator/advertisement/delete"/>
 		</jstl:when>
 		<jstl:when test="${_command == 'create'}">
-			<acme:submit code="administrator.banner.form.button.create" action="/administrator/banner/create"/>
+			<acme:submit code="administrator.banner.form.button.create" action="/administrator/advertisement/create"/>
 		</jstl:when>	
 	</jstl:choose>
 </acme:form>

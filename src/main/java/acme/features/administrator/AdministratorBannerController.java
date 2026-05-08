@@ -8,10 +8,10 @@ import org.springframework.stereotype.Controller;
 
 import acme.client.components.principals.Administrator;
 import acme.client.controllers.AbstractController;
-import acme.entities.banner.Banner;
+import acme.entities.banner.Advertisement;
 
 @Controller
-public class AdministratorBannerController extends AbstractController<Administrator, Banner> {
+public class AdministratorBannerController extends AbstractController<Administrator, Advertisement> {
 
 	@PostConstruct
 	protected void initialise() {

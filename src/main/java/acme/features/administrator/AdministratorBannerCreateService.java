@@ -6,24 +6,24 @@ import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Administrator;
 import acme.client.services.AbstractService;
-import acme.entities.banner.Banner;
+import acme.entities.banner.Advertisement;
 
 @Service
-public class AdministratorBannerCreateService extends AbstractService<Administrator, Banner> {
+public class AdministratorBannerCreateService extends AbstractService<Administrator, Advertisement> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
 	private AdministratorBannerRepository	repository;
 
-	private Banner							banner;
+	private Advertisement							banner;
 
 	// AbstractService interface -------------------------------------------
 
 
 	@Override
 	public void load() {
-		this.banner = super.newObject(Banner.class);
+		this.banner = super.newObject(Advertisement.class);
 	}
 
 	@Override
