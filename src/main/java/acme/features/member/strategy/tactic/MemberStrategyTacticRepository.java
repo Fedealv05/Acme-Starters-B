@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.client.repositories.AbstractRepository;
+import acme.entities.projects.Project;
 import acme.entities.projects.ProjectMember;
 import acme.entities.strategy.Strategy;
 import acme.entities.strategy.Tactic;
@@ -24,5 +25,8 @@ public interface MemberStrategyTacticRepository extends AbstractRepository {
 
 	@Query("select t from Tactic t where t.id = :id")
 	Tactic findTacticById(int id);
+
+	@Query("select p from Project p where p.id = :id")
+	Project findProjectById(int id);
 
 }

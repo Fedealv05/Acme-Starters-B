@@ -29,7 +29,8 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 		int id;
 		id = super.getRequest().getData("projectId", int.class);
 		this.project = this.projectRepository.findProjectById(id);
-		this.inventions = this.repository.findInventionsByProjectId(this.project.getId());
+		if (this.project != null)
+			this.inventions = this.repository.findInventionsByProjectId(this.project.getId());
 
 	}
 
@@ -38,7 +39,7 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.project.getId(), memberId) != null;
+		status = this.project != null && this.repository.findProjectMember(this.project.getId(), memberId) != null;
 
 		super.setAuthorised(status);
 	}
