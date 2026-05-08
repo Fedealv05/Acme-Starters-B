@@ -25,7 +25,8 @@ public class MemberCampaignMilestoneListService extends AbstractService<Member, 
 	public void load() {
 		this.campaignId = super.getRequest().getData("campaignId", int.class);
 		this.milestones = this.repository.findByCampaignId(this.campaignId);
-		this.projectId = this.repository.findCampaignById(this.campaignId).getProject().getId();
+		if (this.repository.findCampaignById(this.campaignId) != null)
+			this.projectId = this.repository.findCampaignById(this.campaignId).getProject().getId();
 	}
 
 	@Override
@@ -33,7 +34,7 @@ public class MemberCampaignMilestoneListService extends AbstractService<Member, 
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.projectId, memberId) != null;
+		status = this.repository.findProjectById(this.projectId) != null && this.repository.findProjectMember(this.projectId, memberId) != null;
 
 		super.setAuthorised(status);
 	}

@@ -30,7 +30,8 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 		int id;
 		id = super.getRequest().getData("projectId", int.class);
 		this.project = this.projectRepository.findProjectById(id);
-		this.strategies = this.repository.findStrategiesByProjectId(this.project.getId());
+		if (this.project != null)
+			this.strategies = this.repository.findStrategiesByProjectId(this.project.getId());
 
 	}
 
@@ -39,7 +40,7 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 		boolean status;
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = this.repository.findProjectMember(this.project.getId(), memberId) != null;
+		status = this.project != null && this.repository.findProjectMember(this.project.getId(), memberId) != null;
 
 		super.setAuthorised(status);
 	}
