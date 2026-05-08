@@ -12,9 +12,9 @@ import acme.entities.inventions.Invention;
 import acme.entities.projects.Project;
 import acme.entities.projects.ProjectMember;
 import acme.entities.strategy.Strategy;
-import acme.features.manager.ProjectMember.ManagerProjectMemberRepository;
 import acme.features.manager.campaign.ManagerCampaignRepository;
 import acme.features.manager.invention.ManagerInventionRepository;
+import acme.features.manager.project_member.ManagerProjectMemberRepository;
 import acme.features.manager.strategy.ManagerStrategyRepository;
 import acme.realms.Manager;
 
@@ -97,9 +97,7 @@ public class ManagerProjectDeleteService extends AbstractService<Manager, Projec
 
 		projectMembers = this.projectMemberRepository.findByProjectId(id);
 
-		projectMembers.forEach(pm -> {
-			this.projectMemberRepository.delete(pm);
-		});
+		projectMembers.forEach(pm -> this.projectMemberRepository.delete(pm));
 
 		this.repository.delete(this.project);
 	}

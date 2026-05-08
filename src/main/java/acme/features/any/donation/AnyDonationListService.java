@@ -35,7 +35,7 @@ public class AnyDonationListService extends AbstractService<Any, Donation> {
 	@Override
 	public void authorise() {
 
-		boolean status = this.sponsorship != null && this.donations.stream().allMatch(i -> i.getSponsorship().getDraftMode() == false);
+		boolean status = this.sponsorship != null && this.donations.stream().allMatch(i -> !i.getSponsorship().getDraftMode());
 
 		super.setAuthorised(status);
 	}

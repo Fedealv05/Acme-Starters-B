@@ -1,0 +1,9 @@
+master.menu.manager.dashboard.show = Dashboard
+manager.manager-dashboard.form.title = Dashboard
+
+manager.dashboard.totalProjects = Total number of projects
+manager.dashboard.devTotalProjects = Standard deviation of projects
+manager.dashboard.minEffort = Minimum project effort
+manager.dashboard.maxEffort = Maximum project effort
+manager.dashboard.avgEffort = Average project effort
+manager.dashboard.devEffort = Standard deviation of project effort

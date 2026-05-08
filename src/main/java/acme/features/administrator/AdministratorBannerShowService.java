@@ -1,0 +1,45 @@
+
+package acme.features.administrator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import acme.client.components.principals.Administrator;
+import acme.client.services.AbstractService;
+import acme.entities.banner.Advertisement;
+
+@Service
+public class AdministratorBannerShowService extends AbstractService<Administrator, Advertisement> {
+
+	// Internal state ---------------------------------------------------------
+
+	@Autowired
+	private AdministratorBannerRepository	repository;
+
+	private Advertisement							banner;
+
+	// AbstractService interface -------------------------------------------
+
+
+	@Override
+	public void load() {
+		int id;
+
+		id = super.getRequest().getData("id", int.class);
+		this.banner = this.repository.findBannerById(id);
+	}
+
+	@Override
+	public void authorise() {
+		boolean status;
+
+		status = this.banner != null;
+
+		super.setAuthorised(status);
+	}
+
+	@Override
+	public void unbind() {
+		super.unbindObject(this.banner, "slogan", "target", "picture");
+	}
+}

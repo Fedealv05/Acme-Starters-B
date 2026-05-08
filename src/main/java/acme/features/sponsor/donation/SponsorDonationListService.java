@@ -38,12 +38,10 @@ public class SponsorDonationListService extends AbstractService<Sponsor, Donatio
 	public void authorise() {
 		boolean status;
 		int sponsorId;
-		Sponsorship sponsorship;
 
-		sponsorship = this.repository.findSponsorshipById(this.sponsorshipId);
 		sponsorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		status = sponsorship != null && sponsorship.getSponsor().getId() == sponsorId;
+		status = this.sponsorship != null && this.sponsorship.getSponsor().getId() == sponsorId;
 		super.setAuthorised(status);
 	}
 

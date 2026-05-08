@@ -41,9 +41,9 @@ public class AnyAuditReportListService extends AbstractService<Any, AuditReport>
 	@Override
 	public void authorise() {
 		boolean status = true;
-		if (super.getRequest().hasData("projectId"))
-			if (this.project == null || this.project.getDraftMode())
-				status = false;
+		if (super.getRequest().hasData("projectId") && this.project == null)
+			status = false;
+
 		super.setAuthorised(status);
 	}
 

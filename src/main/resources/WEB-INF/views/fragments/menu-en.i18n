@@ -90,5 +90,10 @@ master.menu.manager.project.list= My projects
 master.menu.member = Member
 master.menu.member.project.list = Projects
 
+master.menu.administrator.list-banners = List banners
+
+master.menu.user-account.become-manager = Become a manager
+master.menu.user-account.manager-profile =Manager profile
+
 
 

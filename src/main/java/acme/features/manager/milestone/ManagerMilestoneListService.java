@@ -36,8 +36,8 @@ public class ManagerMilestoneListService extends AbstractService<Manager, Milest
 
 		this.milestones = this.repository.findByCampaignId(id);
 		this.campaign = this.campaignRepository.findCampaignById(id);
-
-		this.project = this.campaign.getProject();
+		if (this.campaign != null)
+			this.project = this.campaign.getProject();
 	}
 
 	@Override

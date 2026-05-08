@@ -1,0 +1,16 @@
+administrator.banner.form.title = Formulario de Banner
+administrator.banner.form.label.slogan = Eslogan
+administrator.banner.form.label.picture = Imagen
+administrator.banner.form.label.target = URL destino
+administrator.banner.form.button.create = Crear
+administrator.banner.form.button.update = Actualizar
+administrator.banner.form.button.delete = Eliminar
+
+administrator.banner.list.title = Banners
+administrator.banner.list.label.slogan = Eslogan
+administrator.banner.list.label.target = URL destino
+administrator.banner.list.button.create = Crear
+
+administrator.advertisement.form.title = Formulario de Banner
+
+administrator.advertisement.list.title = Banners

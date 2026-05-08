@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.projects.Project;
-import acme.features.manager.ProjectMember.ManagerProjectMemberRepository;
 import acme.features.manager.project.ManagerProjectRepository;
+import acme.features.manager.project_member.ManagerProjectMemberRepository;
 import acme.realms.Manager;
 import acme.realms.Spokesperson;
 

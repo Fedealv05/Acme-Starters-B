@@ -49,11 +49,10 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 				super.state(context, uniqueTicker, "ticker", "acme.validation.sponsorship.duplicated-ticker.message");
 			}
 
-			// 1. Al menos una donación (si no está en draft)
 			{
 				boolean hasDonations;
 
-				if (sponsorship.getDraftMode())
+				if (Boolean.TRUE.equals(sponsorship.getDraftMode()))
 					hasDonations = true;
 				else {
 					long count = this.donationRepository.countBySponsorshipId(sponsorship.getId());
@@ -63,7 +62,6 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 				super.state(context, hasDonations, "draftMode", "acme.validation.sponsorship.at-least-one-donation.message");
 			}
 
-			// 2. Intervalo de tiempo válido (start < end y en el futuro)
 			{
 				boolean validInterval = false;
 

@@ -33,7 +33,7 @@ public class AnyInventionListService extends AbstractService<Any, Invention> {
 	public void authorise() {
 		boolean todosPublicados = true;
 		if (super.getRequest().hasData("projectId"))
-			todosPublicados = this.inventions.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+			todosPublicados = this.inventions.stream().allMatch(inv -> !inv.getProject().getDraftMode());
 		boolean status = this.inventions != null && todosPublicados;
 		super.setAuthorised(status);
 	}

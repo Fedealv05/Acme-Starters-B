@@ -1,7 +1,6 @@
 
 package acme.entities.projects;
 
-import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -41,52 +40,52 @@ public class Project extends AbstractEntity {
 
 	@Autowired
 	@Transient
-	private InventionRepository	inventionRepository;
+	private transient InventionRepository	inventionRepository;
 
 	@Autowired
 	@Transient
-	private CampaignRepository	campaignRepository;
+	private transient CampaignRepository	campaignRepository;
 
 	@Autowired
 	@Transient
-	private StrategyRepository	strategyRepository;
+	private transient StrategyRepository	strategyRepository;
 
-	private static final long	serialVersionUID	= 1L;
+	private static final long				serialVersionUID	= 1L;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String				title;
+	private String							title;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String				keyWords;
+	private String							keyWords;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String				description;
+	private String							description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				kickOff;
+	private Date							kickOff;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				closeOut;
+	private Date							closeOut;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean				draftMode;
+	private Boolean							draftMode;
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Manager				manager;
+	private Manager							manager;
 
 
 	@Mandatory
@@ -95,31 +94,25 @@ public class Project extends AbstractEntity {
 	public Double getEffort() {
 		double totalMonths = 0.0;
 		Set<Integer> uniqueMemberIds = new HashSet<>();
-		if (this.inventionRepository != null) {
-			Collection<Invention> inventions = this.inventionRepository.findByProjectId(this.getId());
-			if (inventions != null)
-				for (Invention inv : inventions) {
-					totalMonths += inv.getMonthsActive();
-					uniqueMemberIds.add(inv.getInventor().getId());
-				}
-		}
-		if (this.campaignRepository != null) {
 
-			Collection<Campaign> campaigns = this.campaignRepository.findByProjectId(this.getId());
-			if (campaigns != null)
-				for (Campaign cam : campaigns) {
-					totalMonths += cam.getMonthsActive();
-					uniqueMemberIds.add(cam.getSpokesperson().getId());
-				}
-		}
-		if (this.strategyRepository != null) {
-			Collection<Strategy> strategies = this.strategyRepository.findByProjectId(this.getId());
-			if (strategies != null)
-				for (Strategy str : strategies) {
-					totalMonths += str.getMonthsActive();
-					uniqueMemberIds.add(str.getFundraiser().getId());
-				}
-		}
+		if (this.inventionRepository != null)
+			for (Invention inv : this.inventionRepository.findByProjectId(this.getId())) {
+				totalMonths += inv.getMonthsActive();
+				uniqueMemberIds.add(inv.getInventor().getId());
+			}
+
+		if (this.campaignRepository != null)
+			for (Campaign cam : this.campaignRepository.findByProjectId(this.getId())) {
+				totalMonths += cam.getMonthsActive();
+				uniqueMemberIds.add(cam.getSpokesperson().getId());
+			}
+
+		if (this.strategyRepository != null)
+			for (Strategy str : this.strategyRepository.findByProjectId(this.getId())) {
+				totalMonths += str.getMonthsActive();
+				uniqueMemberIds.add(str.getFundraiser().getId());
+			}
+
 		int numberOfPeople = uniqueMemberIds.size();
 
 		if (numberOfPeople == 0)
@@ -127,5 +120,4 @@ public class Project extends AbstractEntity {
 
 		return totalMonths / numberOfPeople;
 	}
-
 }

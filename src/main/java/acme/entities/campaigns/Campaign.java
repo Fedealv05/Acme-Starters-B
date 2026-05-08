@@ -37,53 +37,53 @@ public class Campaign extends AbstractEntity {
 
 	@Autowired
 	@Transient
-	private MilestoneRepository	repository;
+	private transient MilestoneRepository	repository;
 
-	private static final long	serialVersionUID	= 1L;
+	private static final long				serialVersionUID	= 1L;
 
 	@Mandatory
 	@Column(unique = true)
 	@ValidTicker
-	private String				ticker;
+	private String							ticker;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String				name;
+	private String							name;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String				description;
+	private String							description;
 
 	@Mandatory
 	@Temporal(TemporalType.TIMESTAMP)
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	private Date				startMoment;
+	private Date							startMoment;
 
 	@Mandatory
 	@Temporal(TemporalType.TIMESTAMP)
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	private Date				endMoment;
+	private Date							endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String				moreInfo;
+	private String							moreInfo;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean				draftMode;
+	private Boolean							draftMode;
 
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Spokesperson		spokesperson;
+	private Spokesperson					spokesperson;
 
 	@Valid
 	@ManyToOne(optional = true)
-	private Project				project;
+	private Project							project;
 
 
 	@Mandatory

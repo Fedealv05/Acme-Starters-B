@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import acme.client.services.AbstractService;
-import acme.features.manager.ProjectMember.ManagerInventorRepository;
+import acme.features.manager.project_member.ManagerInventorRepository;
 import acme.realms.Inventor;
 import acme.realms.Manager;
 
