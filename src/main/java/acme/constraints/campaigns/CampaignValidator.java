@@ -50,7 +50,7 @@ public class CampaignValidator extends AbstractValidator<ValidCampaign, Campaign
 
 			{
 				boolean validMilestones;
-				if (campaign.getDraftMode())
+				if (Boolean.TRUE.equals(campaign.getDraftMode()))
 					validMilestones = true;
 				else {
 					long count = this.milestoneRepository.countByCampaignId(campaign.getId());

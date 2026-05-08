@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
-import acme.features.manager.ProjectMember.ManagerFundraiserRepository;
+import acme.features.manager.project_member.ManagerFundraiserRepository;
 import acme.realms.Fundraiser;
 import acme.realms.Manager;
 

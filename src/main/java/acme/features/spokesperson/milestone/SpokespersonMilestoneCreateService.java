@@ -38,10 +38,7 @@ public class SpokespersonMilestoneCreateService extends AbstractService<Spokespe
 	@Override
 	public void authorise() {
 		boolean status;
-		String method;
 		boolean campaingCreatedByPrincipal;
-
-		method = super.getRequest().getMethod();
 
 		if (this.campaign != null) {
 			campaingCreatedByPrincipal = this.campaign.getSpokesperson().getId() == super.getRequest().getPrincipal().getActiveRealm().getId();

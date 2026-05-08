@@ -8,9 +8,6 @@ import org.springframework.stereotype.Controller;
 
 import acme.client.controllers.AbstractController;
 import acme.entities.inventions.Part;
-import acme.features.inventor.invention.InventorInventionCreateService;
-import acme.features.inventor.invention.InventorInventionDeleteService;
-import acme.features.inventor.invention.InventorInventionUpdateService;
 import acme.realms.Inventor;
 
 @Controller

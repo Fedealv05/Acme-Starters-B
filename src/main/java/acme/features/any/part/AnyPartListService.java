@@ -39,7 +39,7 @@ public class AnyPartListService extends AbstractService<Any, Part> {
 	@Override
 	public void authorise() {
 		boolean status;
-		status = this.invention != null && !this.invention.getDraftMode() && this.parts.stream().allMatch(i -> i.getInvention().getDraftMode() == false);
+		status = this.invention != null && !this.invention.getDraftMode() && this.parts.stream().allMatch(i -> !i.getInvention().getDraftMode());
 		super.setAuthorised(status);
 	}
 

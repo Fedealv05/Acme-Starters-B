@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.services.AbstractService;
 import acme.entities.projects.Project;
-import acme.features.manager.ProjectMember.ManagerProjectMemberRepository;
 import acme.features.manager.project.ManagerProjectRepository;
+import acme.features.manager.project_member.ManagerProjectMemberRepository;
 import acme.realms.Inventor;
 import acme.realms.Manager;
 

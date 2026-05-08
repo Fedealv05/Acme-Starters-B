@@ -71,7 +71,7 @@ public class ManagerProjectPublishService extends AbstractService<Manager, Proje
 
 		boolean hasAtLeastOneInvention;
 		List<Invention> inventions = this.inventionRepository.findByProjectId(this.project.getId());
-		hasAtLeastOneInvention = inventions.size() >= 1;
+		hasAtLeastOneInvention = !inventions.isEmpty();
 
 		super.state(hasAtLeastOneInvention, "*", "project.publish.validation.hasAtLeastOneInvention");
 

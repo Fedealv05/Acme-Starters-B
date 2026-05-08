@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
-import acme.features.manager.ProjectMember.ManagerSpokespersonRepository;
+import acme.features.manager.project_member.ManagerSpokespersonRepository;
 import acme.realms.Manager;
 import acme.realms.Spokesperson;
 

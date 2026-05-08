@@ -32,7 +32,7 @@ public class AnyStrategyListService extends AbstractService<Any, Strategy> {
 	public void authorise() {
 		boolean todosPublicados = true;
 		if (super.getRequest().hasData("projectId"))
-			todosPublicados = this.strategies.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+			todosPublicados = this.strategies.stream().allMatch(inv -> !inv.getProject().getDraftMode());
 		boolean status = this.strategies != null && todosPublicados;
 		super.setAuthorised(status);
 	}

@@ -39,10 +39,7 @@ public class InventorPartCreateService extends AbstractService<Inventor, Part> {
 	@Override
 	public void authorise() {
 		boolean status;
-		String method;
 		boolean inventionCreatedByPrincipal;
-
-		method = super.getRequest().getMethod();
 
 		if (this.invention != null) {
 

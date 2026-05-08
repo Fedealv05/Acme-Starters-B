@@ -33,7 +33,7 @@ public class AnyCampaignListService extends AbstractService<Any, Campaign> {
 	public void authorise() {
 		boolean todosPublicados = true;
 		if (super.getRequest().hasData("projectId"))
-			todosPublicados = this.campaigns.stream().allMatch(inv -> inv.getProject().getDraftMode() == false);
+			todosPublicados = this.campaigns.stream().allMatch(inv -> !inv.getProject().getDraftMode());
 		boolean status = this.campaigns != null && todosPublicados;
 		super.setAuthorised(status);
 	}

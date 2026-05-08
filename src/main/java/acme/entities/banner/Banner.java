@@ -1,5 +1,5 @@
 
-package acme.entities.advertisement;
+package acme.entities.banner;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Advertisement extends AbstractEntity {
+public class Banner extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
