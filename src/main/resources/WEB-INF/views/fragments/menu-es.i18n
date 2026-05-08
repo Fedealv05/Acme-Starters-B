@@ -93,3 +93,6 @@ master.menu.member.project.list = Proyectos
 
 master.menu.administrator.list-banners = Ver banners
 
+master.menu.user-account.become-manager = Hazte Manager
+master.menu.user-account.manager-profile =Perfil de Manager
+
