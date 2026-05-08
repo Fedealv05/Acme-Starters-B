@@ -8,4 +8,4 @@
 	<acme:list-column code="administrator.banner.list.label.target" path="target" width="70%"/>
 </acme:list>
 
-<acme:button code="administrator.banner.list.button.create" action="/administrator/banner/create"/>
+<acme:button code="administrator.banner.list.button.create" action="/administrator/advertisement/create"/>

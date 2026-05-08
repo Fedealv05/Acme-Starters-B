@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 import acme.client.helpers.LoggerHelper;
-import acme.entities.banner.Banner;
+import acme.entities.banner.Advertisement;
 
 @ControllerAdvice
 public class BannerAdvisor {
@@ -19,9 +19,9 @@ public class BannerAdvisor {
 	// Beans ------------------------------------------------------------------
 
 
-	@ModelAttribute("banner")
-	public Banner getBanner() {
-		Banner result;
+	@ModelAttribute("advertisement")
+	public Advertisement getBanner() {
+		Advertisement result;
 
 		try {
 			result = this.repository.findRandomBanner();

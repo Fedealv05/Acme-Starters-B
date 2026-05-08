@@ -11,22 +11,22 @@ import org.springframework.stereotype.Repository;
 
 import acme.client.helpers.RandomHelper;
 import acme.client.repositories.AbstractRepository;
-import acme.entities.banner.Banner;
+import acme.entities.banner.Advertisement;
 
 @Repository
 public interface BannerRepository extends AbstractRepository {
 
-	@Query("select count(b) from Banner b")
+	@Query("select count(b) from Advertisement b")
 	int countBanners();
 
-	@Query("select b from Banner b")
-	List<Banner> findAllBanners(PageRequest pageRequest);
+	@Query("select b from Advertisement b")
+	List<Advertisement> findAllBanners(PageRequest pageRequest);
 
-	default Banner findRandomBanner() {
-		Banner result;
+	default Advertisement findRandomBanner() {
+		Advertisement result;
 		int count, index;
 		PageRequest page;
-		List<Banner> list;
+		List<Advertisement> list;
 
 		count = this.countBanners();
 		if (count == 0)
